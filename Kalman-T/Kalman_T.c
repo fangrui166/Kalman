@@ -73,8 +73,9 @@ int main(void)
         kalman = GetKalman(prediction, Kg, measure);
         Kg = GetKg(PredictionCovariance);
         covariance = GetCovariance(Kg, PredictionCovariance);
-        printf("<N=%d>\t measure:%.2f\t Kg:%.2f\t covariance:%.2f\t kalman:%.2f\r\n",
-            i, measure, Kg, covariance, kalman);
+        //printf("<N=%d>\t measure:%.2f\t Kg:%.2f\t covariance:%.2f\t kalman:%.2f\r\n",
+            //i, measure, Kg, covariance, kalman);
+		printf("%.2f  %.2f\r\n",measure, kalman);
     }
     return 0;
 }
