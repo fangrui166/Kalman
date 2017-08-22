@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+  <project>
+    <path>$WS_DIR$\SYS\EWARM\link_sys.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\BL1\EWARM\link_BL1.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\BL0\EWARM\link_BL0.ewp</path>
+  </project>
+  <batchBuild />
+</workspace>

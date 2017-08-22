@@ -1,0 +1,77 @@
+#ifndef __POWERMANAGER_POWER_H
+#define __POWERMANAGER_POWER_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_pwr.h"
+#include "stm32f4xx_hal_pwr_ex.h"
+
+
+#define PWRMGR_VOLTSCALING_168HZ            PWR_REGULATOR_VOLTAGE_SCALE1
+#define PWRMGR_VOLTSCALING_144HZ            PWR_REGULATOR_VOLTAGE_SCALE2
+#define PWRMGR_VOLTSCALING_120HZ            PWR_REGULATOR_VOLTAGE_SCALE3
+
+#define PWRMGR_SLEEP_ENTRY_WFI              PWR_SLEEPENTRY_WFI
+#define PWRMGR_SLEEP_ENTRY_WFE              PWR_SLEEPENTRY_WFE
+
+#define PWRMGR_STOP_ENTRY_WFI               PWR_STOPENTRY_WFI
+#define PWRMGR_STOP_ENTRY_WFE               PWR_STOPENTRY_WFE
+
+#define PWRMGR_INTER_REGULATOR_ON           PWR_MAINREGULATOR_ON
+#define PWRMGR_INTER_LOPWR_REGULATOR_ON     PWR_LOWPOWERREGULATOR_ON
+#define PWRMGR_RTC_KICK_WDG_PERIOD_S        30 // unit: s
+#define PWRMGR_STOP_DURATION                (1 * 60)  // 1 min
+
+typedef enum{
+    WAKEUP_SOURCE_EXTI0 = (1 << 0),
+    WAKEUP_SOURCE_EXTI1 = (1 << 1),
+    WAKEUP_SOURCE_EXTI2 = (1 << 2),
+    WAKEUP_SOURCE_EXTI3 = (1 << 3),
+    WAKEUP_SOURCE_EXTI4 = (1 << 4),
+    WAKEUP_SOURCE_EXTI5 = (1 << 5),
+    WAKEUP_SOURCE_EXTI6 = (1 << 6),
+    WAKEUP_SOURCE_EXTI7 = (1 << 7),
+    WAKEUP_SOURCE_EXTI8 = (1 << 8),
+    WAKEUP_SOURCE_EXTI9 = (1 << 9),
+    WAKEUP_SOURCE_EXTI10 = (1 << 10),
+    WAKEUP_SOURCE_EXTI11 = (1 << 11),
+    WAKEUP_SOURCE_EXTI12 = (1 << 12),
+    WAKEUP_SOURCE_EXTI13 = (1 << 13),
+    WAKEUP_SOURCE_EXTI14 = (1 << 14),
+    WAKEUP_SOURCE_EXTI15 = (1 << 15),
+    WAKEUP_SOURCE_RTC_TIMER    = (1 << 16),
+    WAKEUP_SOURCE_USB_DATA = (1 << 17),
+    WAKEUP_SOURCE_CHARGE   = (1 << 18),
+    WAKEUP_SOURCE_POWERKEY = (1 << 19),
+    WAKEUP_SOURCE_RTC_ALARMA = (1 << 20),
+    WAKEUP_SOURCE_RTC_ALARMB = (1 << 21),
+}WAKEUP_SOURCE_T;
+
+extern volatile uint32_t wakeup_source;
+
+void PWRMGR_SYSTEM_ENTER_FLASH_POWER_ENABLE(uint32_t);
+
+uint32_t PWRMGR_SYSTEM_GET_VOLTAGE_SCALING(void);
+int PWRMGR_SYSTEM_SET_VOLTAGE_SCALING(uint32_t);
+
+void PWRMGR_SYSTEM_POWER_SLEEP_MODE(void);
+void PWRMGR_SYSTEM_POWER_EXIT_SLEEP_MODE(void);
+void PWRMGR_SYSTEM_POWER_ENTER_STOP_MODE(void);
+void PWRMGR_SYSTEM_POWER_EXIT_STOP_MODE(void);
+void PWRMGR_SYSTEM_POWER_STANDBY_MODE(void);
+
+int PWRMGR_SYSTEM_POWER_RESET(int reason);
+int PWRMGR_SYSTEM_POWER_POWEROFF(int reason);
+int PWRMGR_SYSTEM_CAN_BE_POWER_OFF(void);
+int isUSBDataIn(void);
+int isChargerIn(void);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __POWERMANAGER_POWER_H */

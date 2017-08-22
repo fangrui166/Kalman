@@ -1,0 +1,1528 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 08/Aug/2017  16:44:23
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Exe\link.out.tmp
+#    Map file     =  
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\List\link.map
+#    Command line =  
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\ams361ep01_dsi_vdo.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\anx7737_driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\audio_alc4040_driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\audio_alc5665_driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\bl_header.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\BMI160_ACC_GYRO_Driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\BMI160_ACC_GYRO_Driver_HL.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\bq2589x_charger.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\ccgx_fw.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\ccgx_fw_io.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\dfuTask.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\display_drv.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\flash_drv.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\fotamode.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\GLOBAL.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\gpio.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\gpio_exp.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\hlog.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\htc_audio_path_service.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\i2c_drv.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\init.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\initTask.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\main.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\max17050_fuel_gauge.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\misc_data.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\myprintf.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\ncp6924.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\PowerManager_power.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\ps176_driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\shellTask.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\startup_stm32f412rx.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_cortex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_dma.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_dma_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_flash.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_flash_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_flash_ramfunc.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_gpio.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_i2c.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_i2c_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_msp.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_pcd.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_pcd_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_pwr.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_pwr_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_rcc.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_rcc_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_spi.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_tim.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_tim_ex.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_hal_uart.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_it.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\stm32f4xx_ll_usb.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\system_stm32f4xx.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\task.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\tc358870xbg_driver.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usart_drv.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usb_device_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_conf_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_core_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_ctlreq_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_desc_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_dfu_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_dfu_if_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\usbd_ioreq_bl.o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj\x_pmic.o --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Exe\link.out.tmp --map
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\List\link.map --config
+#        G:\code\STM32\Kalman\link_hmd\BL1\EWARM\stm32f412rx_flash_sram.icf
+#        --keep __checksum --semihosting --entry __iar_program_start
+#        --place_holder __checksum,4,.checksum,4 --define_symbol
+#        __checksum_begin=0x8008000 --define_symbol __checksum_end=0x801fffb
+#        --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08008000 { ro section .intvec };
+"A2":  place at 0x20000000 { section .intvec_RAM0 };
+"P1":  place in [from 0x08008000 to 0x0801fffb] { ro };
+"P2":  place in [from 0x20002000 to 0x2003ffff] { rw, block CSTACK, block HEAP };
+"A3":  place at 0x0801fffc { ro section .checksum };
+
+  Section                 Kind        Address     Size  Object
+  -------                 ----        -------     ----  ------
+"A1":                                              0x8
+  .intvec                 ro code  0x08008000      0x8  startup_stm32f412rx.o [1]
+                                 - 0x08008008      0x8
+
+"P1", part 1 of 2:                               0x11d
+  .rodata                 const    0x08008008      0x0  zero_init3.o [5]
+  .rodata                 const    0x08008008      0x0  lz77_init.o [5]
+  Initializer bytes       ro data  0x08008008    0x11d  <for section .intvec_RAM0-1>
+                                 - 0x08008125    0x11d
+
+Absolute sections, part 1 of 3:                   0x40
+  .rodata                 const    0x08008fc0     0x10  bl_header.o [1]
+  .rodata                 const    0x08008fd0     0x10  bl_header.o [1]
+  .rodata                 const    0x08008fe0     0x10  bl_header.o [1]
+  .rodata                 const    0x08008ff0     0x10  bl_header.o [1]
+                                 - 0x08009000     0x40
+
+"P1", part 2 of 2:                              0xd9a8
+  .text                   ro code  0x08009000    0x1c2  lz77_init.o [5]
+  .text                   ro code  0x080091c2      0x6  abort.o [3]
+  .text                   ro code  0x080091c8     0x14  exit.o [6]
+  Veneer                  ro code  0x080091dc      0x8  - Linker created -
+  Veneer                  ro code  0x080091e4      0x8  - Linker created -
+  Veneer                  ro code  0x080091ec      0x8  - Linker created -
+  .text                   ro code  0x080091f4     0x6c  bl_header.o [1]
+  .text                   ro code  0x08009260     0x50  system_stm32f4xx.o [1]
+  .text                   ro code  0x080092b0     0x28  data_init.o [5]
+  .text                   ro code  0x080092d8     0x22  zero_init3.o [5]
+  .iar.init_table         const    0x080092fc     0x48  - Linker created -
+  .text                   ro code  0x08009344     0x1a  fpinit_M.o [4]
+  Veneer                  ro code  0x08009360      0x8  - Linker created -
+  Veneer                  ro code  0x08009368      0x8  - Linker created -
+  .text                   ro code  0x08009370     0x1a  cmain.o [5]
+  .text                   ro code  0x0800938a      0x4  low_level_init.o [3]
+  .text                   ro code  0x08009390     0x10  startup_stm32f412rx.o [1]
+  .text                   ro code  0x080093a0      0xc  cstartup_M.o [5]
+  Initializer bytes       ro data  0x080093ac   0xd5fc  <for P2 s0>
+                                 - 0x080169a8   0xd9a8
+
+"A3":                                              0x4
+  .checksum               const    0x0801fffc      0x4  Place holder __checksum
+                                 - 0x08020000      0x4
+
+"A2":                                            0x1c4
+  section .intvec_RAM0-1           0x20000000    0x1c4  <Init block>
+    .intvec_RAM0          inited   0x20000000    0x1c4  startup_stm32f412rx.o [1]
+                                 - 0x200001c4    0x1c4
+
+Absolute sections, part 2 of 3:                   0x14
+  .noinit                 uninit   0x20002000     0x10  initTask.o [1]
+  .noinit                 uninit   0x20002010      0x4  hlog.o [1]
+                                 - 0x20002014     0x14
+
+Absolute sections, part 3 of 3:                0x10000
+  .noinit                 uninit   0x20002018  0x10000  hlog.o [1]
+                                 - 0x20012018  0x10000
+
+"P2":                                          0x18050
+  P2 s0                            0x20012018  0x13964  <Init block>
+    .text                 inited   0x20012018   0x28f4  tc358870xbg_driver.o [1]
+    .text                 inited   0x2001490c    0x58c  i2c_drv.o [1]
+    .text                 inited   0x20014e98     0x24  printf.o [3]
+    .text                 inited   0x20014ebc     0x88  stm32f4xx_hal.o [1]
+    .text                 inited   0x20014f44      0x6  ABImemclr4.o [5]
+    .text                 inited   0x20014f4a     0x1a  xsnprout.o [3]
+    .text                 inited   0x20014f64     0xe8  anx7737_driver.o [1]
+    .text                 inited   0x2001504c     0xb4  ps176_driver.o [1]
+    .text                 inited   0x20015100    0x1ec  stm32f4xx_hal_gpio.o [1]
+    .text                 inited   0x200152ec    0x454  x_pmic.o [1]
+    .text                 inited   0x20015740    0x484  ams361ep01_dsi_vdo.o [1]
+    .text                 inited   0x20015bc4     0x6c  strncpy_unaligned.o [5]
+    .text                 inited   0x20015c30     0x44  snprintf.o [3]
+    .text                 inited   0x20015c74    0x7ba  stm32f4xx_hal_i2c.o [1]
+    .text                 inited   0x20016430   0x114e  xprintffull.o [3]
+    .text                 inited   0x20017580    0x120  stm32f4xx_hal_cortex.o [1]
+    .text                 inited   0x200176a0    0x16c  stm32f4xx_hal_msp.o [1]
+    .text                 inited   0x2001780c     0x3a  ABImemset48.o [5]
+    .text                 inited   0x20017848    0x178  gpio_exp.o [1]
+    .text                 inited   0x200179c0    0x440  gpio.o [1]
+    .text                 inited   0x20017e00     0x5e  ABImemset.o [5]
+    .text                 inited   0x20017e60    0x1dc  stm32f4xx_hal_rcc.o [1]
+    .text                 inited   0x2001803c     0x20  xmbtowc.o [3]
+    .text                 inited   0x2001805c     0x16  strchr.o [5]
+    .text                 inited   0x20018074     0x36  strlen.o [5]
+    .text                 inited   0x200180ac     0x58  memchr.o [5]
+    .text                 inited   0x20018104      0xa  xmbcurmax.o [3]
+    .text                 inited   0x20018110     0xb0  xxmemxmalloc.o [3]
+    .text                 inited   0x200181c0     0x1a  xwctomb.o [3]
+    .text                 inited   0x200181dc     0x76  ABImemcpy_unaligned.o [5]
+    .text                 inited   0x20018254     0x80  xxmemxfree.o [3]
+    .text                 inited   0x200182d4     0xee  I64DivMod.o [5]
+    .text                 inited   0x200183c2     0x42  xdnorm.o [4]
+    .text                 inited   0x20018404     0x2e  DblCmpLe.o [4]
+    .text                 inited   0x20018434     0x2e  DblCmpGe.o [4]
+    .text                 inited   0x20018464    0x114  xdscale.o [4]
+    .text                 inited   0x20018578     0x58  DblToI32.o [4]
+    .text                 inited   0x200185d0     0x30  I32ToDbl.o [4]
+    .text                 inited   0x20018600    0x180  DblSub.o [4]
+    .text                 inited   0x20018780    0x1a2  DblMul.o [4]
+    .text                 inited   0x20018924    0x246  DblDiv.o [4]
+    .text                 inited   0x20018b6c     0x6c  localeconv.o [3]
+    .text                 inited   0x20018bd8      0xe  div.o [3]
+    .text                 inited   0x20018be8    0x428  initTask.o [1]
+    .text                 inited   0x20019010     0x24  setlocale.o [3]
+    .text                 inited   0x20019034     0x60  xencoding_sb.o [3]
+    .text                 inited   0x20019094     0x2c  xgetmemchunk.o [3]
+    .text                 inited   0x200190c0      0x2  I64DivZer.o [5]
+    .text                 inited   0x200190c4     0xd4  DblAdd.o [4]
+    .text                 inited   0x20019198      0x2  xtls.o [3]
+    .text                 inited   0x2001919a     0x2a  strncmp.o [3]
+    .text                 inited   0x200191c4     0xd8  hlog.o [1]
+    Veneer                inited   0x2001929c      0x8  - Linker created -
+    .text                 inited   0x200192a4    0x730  misc_data.o [1]
+    .text                 inited   0x200199d4   0x24b4  shellTask.o [1]
+    .text                 inited   0x2001be88     0x92  task.o [1]
+    .text                 inited   0x2001bf1c     0x42  strcmp_unaligned.o [5]
+    .text                 inited   0x2001bf60    0x4dc  flash_drv.o [1]
+    .text                 inited   0x2001c43c     0x44  strcpy_unaligned.o [5]
+    .text                 inited   0x2001c480      0x4  strtoul.o [3]
+    .text                 inited   0x2001c484     0x46  strcasecmp.o [3]
+    .text                 inited   0x2001c4cc     0xe8  PowerManager_power.o [1]
+    .text                 inited   0x2001c5b4    0x7e0  BMI160_ACC_GYRO_Driver.o [1]
+    .text                 inited   0x2001cd94    0x19c  htc_audio_path_service.o [1]
+    .text                 inited   0x2001cf30    0xce4  audio_alc5665_driver.o [1]
+    .text                 inited   0x2001dc14     0x4e  FltToDbl.o [4]
+    .text                 inited   0x2001dc64   0x1364  ccgx_fw.o [1]
+    .text                 inited   0x2001efc8     0xae  ccgx_fw_io.o [1]
+    .text                 inited   0x2001f078    0x240  BMI160_ACC_GYRO_Driver_HL.o [1]
+    .text                 inited   0x2001f2b8    0x28c  audio_alc4040_driver.o [1]
+    .text                 inited   0x2001f544    0x1f8  stm32f4xx_hal_flash.o [1]
+    .text                 inited   0x2001f73c    0x158  stm32f4xx_hal_flash_ex.o [1]
+    .text                 inited   0x2001f894    0x198  xstoul.o [3]
+    .text                 inited   0x2001fa2c     0x14  tolower.o [3]
+    .text                 inited   0x2001fa40     0x34  stm32f4xx_hal_pwr.o [1]
+    .text                 inited   0x2001fa74    0x130  init.o [1]
+    .text                 inited   0x2001fba4    0x498  stm32f4xx_hal_spi.o [1]
+    .text                 inited   0x2002003c     0x14  isxxx.o [3]
+    .text                 inited   0x20020050      0xc  errno.o [3]
+    .text                 inited   0x2002005c      0xc  xlocale_c.o [3]
+    .text                 inited   0x20020068    0x4a4  stm32f4xx_hal_rcc_ex.o [1]
+    .text                 inited   0x2002050c     0x14  main.o [1]
+    .text                 inited   0x20020520    0x14c  usart_drv.o [1]
+    .text                 inited   0x2002066c      0xa  display_drv.o [1]
+    .text                 inited   0x20020676     0x14  xlocale_c.o [3]
+    .text                 inited   0x2002068c    0x598  stm32f4xx_hal_uart.o [1]
+    .text                 inited   0x20020c24     0x24  stm32f4xx_hal_dma.o [1]
+    .text                 inited   0x20020c48    0x8e8  max17050_fuel_gauge.o [1]
+    .text                 inited   0x20021530    0x8dc  bq2589x_charger.o [1]
+    .text                 inited   0x20021e0c    0x898  stm32f4xx_ll_usb.o [1]
+    .text                 inited   0x200226a4    0x84e  stm32f4xx_hal_pcd.o [1]
+    .text                 inited   0x20022ef4    0x21a  usbd_conf_bl.o [1]
+    .text                 inited   0x20023110     0x86  stm32f4xx_hal_pcd_ex.o [1]
+    .text                 inited   0x20023196    0x284  usbd_core_bl.o [1]
+    .text                 inited   0x2002341c    0x3d4  usbd_ctlreq_bl.o [1]
+    .text                 inited   0x200237f0     0x60  usbd_ioreq_bl.o [1]
+    .rodata               inited   0x20023850    0x6c8  tc358870xbg_driver.o [1]
+    .text                 inited   0x20023f18    0x690  usbd_dfu_bl.o [1]
+    Veneer                inited   0x200245a8      0x8  - Linker created -
+    .text                 inited   0x200245b0    0x3c0  fotamode.o [1]
+    .text                 inited   0x20024970    0x460  ncp6924.o [1]
+    .text                 inited   0x20024dd0    0x14e  usbd_dfu_if_bl.o [1]
+    .rodata               inited   0x20024f20    0x122  shellTask.o [1]
+    .rodata               inited   0x20025044     0xc0  ams361ep01_dsi_vdo.o [1]
+    .text                 inited   0x20025104     0xb0  usbd_desc_bl.o [1]
+    .data                 inited   0x200251b4     0x94  max17050_fuel_gauge.o [1]
+    __DLIB_PERTHREAD      inited   0x20025248     0x88  localeconv.o [3]
+    .text                 inited   0x200252d0     0x7c  dfuTask.o [1]
+    .text                 inited   0x2002534c     0x38  usb_device_bl.o [1]
+    __DLIB_PERTHREAD      inited   0x20025384     0x74  setlocale.o [3]
+    .text                 inited   0x200253f8     0x6e  stm32f4xx_it.o [1]
+    .data                 inited   0x20025468     0x5c  BMI160_ACC_GYRO_Driver_HL.o [1]
+    .data                 inited   0x200254c4     0x4c  shellTask.o [1]
+    .data                 inited   0x20025510     0x48  ams361ep01_dsi_vdo.o [1]
+    .data                 inited   0x20025558     0x48  ams361ep01_dsi_vdo.o [1]
+    .text                 inited   0x200255a0     0x44  myprintf.o [1]
+    .data                 inited   0x200255e4     0x40  xfiles.o [3]
+    .rodata               inited   0x20025624     0x3c  usbd_dfu_if_bl.o [1]
+    .data                 inited   0x20025660     0x3c  tc358870xbg_driver.o [1]
+    .data                 inited   0x2002569c     0x3c  usbd_dfu_bl.o [1]
+    .data                 inited   0x200256d8     0x30  bq2589x_charger.o [1]
+    .data                 inited   0x20025708     0x20  max17050_fuel_gauge.o [1]
+    .data                 inited   0x20025728     0x1c  usbd_desc_bl.o [1]
+    .data                 inited   0x20025744     0x1c  usbd_dfu_bl.o [1]
+    .data                 inited   0x20025760     0x1c  usbd_dfu_if_bl.o [1]
+    .data                 inited   0x2002577c     0x18  ccgx_fw.o [1]
+    .text                 inited   0x20025794     0x16  xprout.o [3]
+    .text                 inited   0x200257ac      0xc  putchar.o [3]
+    .data                 inited   0x200257b8     0x14  gpio_exp.o [1]
+    .data                 inited   0x200257cc     0x14  ncp6924.o [1]
+    .data                 inited   0x200257e0     0x14  usbd_desc_bl.o [1]
+    .data                 inited   0x200257f4     0x10  ncp6924.o [1]
+    .data                 inited   0x20025804      0xc  gpio_exp.o [1]
+    .data                 inited   0x20025810      0xc  usbd_dfu_bl.o [1]
+    Veneer                inited   0x2002581c      0x8  - Linker created -
+    .text                 inited   0x20025824      0xa  cexit.o [5]
+    .data                 inited   0x20025830      0x8  ams361ep01_dsi_vdo.o [1]
+    .data                 inited   0x20025838      0x8  ams361ep01_dsi_vdo.o [1]
+    .text                 inited   0x20025840      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025844      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025848      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002584c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025850      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025854      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025858      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002585c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025860      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025864      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025868      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002586c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025870      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025874      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025878      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002587c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025880      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025884      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025888      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002588c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025890      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025894      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025898      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002589c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258a0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258a4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258a8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258ac      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258b0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258b4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258b8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258bc      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258c0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258c4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258c8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258cc      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258d0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258d4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258d8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258dc      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258e0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258e4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258e8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258ec      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258f0      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258f4      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258f8      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x200258fc      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025900      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025904      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025908      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002590c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025910      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025914      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025918      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002591c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025920      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025924      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025928      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002592c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025930      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025934      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025938      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002593c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025940      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025944      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025948      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002594c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025950      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025954      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025958      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x2002595c      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025960      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025964      0x4  startup_stm32f412rx.o [1]
+    .text                 inited   0x20025968      0x4  exit.o [3]
+    .data                 inited   0x2002596c      0x4  ams361ep01_dsi_vdo.o [1]
+    .data                 inited   0x20025970      0x4  system_stm32f4xx.o [1]
+    .data                 inited   0x20025974      0x4  usbd_desc_bl.o [1]
+    __DLIB_PERTHREAD      inited   0x20025978      0x4  errno.o [3]
+  .bss                    zero     0x20025980    0xa58  misc_data.o [1]
+  .bss                    zero     0x200263d8    0x418  usbd_dfu_bl.o [1]
+  .bss                    zero     0x200267f0    0x410  shellTask.o [1]
+  .bss                    zero     0x20026c00    0x3c8  usbd_conf_bl.o [1]
+  .bss                    zero     0x20026fc8    0x224  usb_device_bl.o [1]
+  .bss                    zero     0x200271ec    0x200  usbd_desc_bl.o [1]
+  .bss                    zero     0x200273ec    0x100  ccgx_fw.o [1]
+  .bss                    zero     0x200274ec    0x100  usart_drv.o [1]
+  .bss                    zero     0x200275ec    0x100  usbd_dfu_bl.o [1]
+  .bss                    zero     0x200276ec     0x80  bl_header.o [1]
+  .bss                    zero     0x2002776c     0x74  i2c_drv.o [1]
+  .bss                    zero     0x200277e0     0x54  i2c_drv.o [1]
+  .bss                    zero     0x20027834     0x50  xfiles.o [3]
+  .bss                    zero     0x20027884     0x48  audio_alc5665_driver.o [1]
+  .bss                    zero     0x200278cc     0x48  usart_drv.o [1]
+  .bss                    zero     0x20027914     0x44  max17050_fuel_gauge.o [1]
+  .bss                    zero     0x20027958     0x38  bq2589x_charger.o [1]
+  .bss                    zero     0x20027990     0x34  x_pmic.o [1]
+  .bss                    zero     0x200279c4     0x20  stm32f4xx_hal_flash.o [1]
+  .bss                    zero     0x200279e4     0x1c  BMI160_ACC_GYRO_Driver.o [1]
+  .bss                    zero     0x20027a00     0x1c  task.o [1]
+  .bss                    zero     0x20027a1c      0x8  audio_alc4040_driver.o [1]
+  .bss                    zero     0x20027a24      0x8  shellTask.o [1]
+  .bss                    zero     0x20027a2c      0x8  xxmemxmalloc.o [3]
+  .bss                    zero     0x20027a34      0x4  BMI160_ACC_GYRO_Driver.o [1]
+  .bss                    zero     0x20027a38      0x4  dfuTask.o [1]
+  .bss                    zero     0x20027a3c      0x4  GLOBAL.o [1]
+  .bss                    zero     0x20027a40      0x4  GLOBAL.o [1]
+  .bss                    zero     0x20027a44      0x4  GLOBAL.o [1]
+  .bss                    zero     0x20027a48      0x4  htc_audio_path_service.o [1]
+  .bss                    zero     0x20027a4c      0x4  init.o [1]
+  .bss                    zero     0x20027a50      0x4  initTask.o [1]
+  .bss                    zero     0x20027a54      0x4  initTask.o [1]
+  .bss                    zero     0x20027a58      0x4  stm32f4xx_hal.o [1]
+  .bss                    zero     0x20027a5c      0x4  xgetmemchunk.o [3]
+  .bss                    zero     0x20027a60      0x1  dfuTask.o [1]
+  .bss                    zero     0x20027a61      0x1  GLOBAL.o [1]
+  .bss                    zero     0x20027a62      0x1  GLOBAL.o [1]
+  .bss                    zero     0x20027a63      0x1  initTask.o [1]
+  .bss                    zero     0x20027a64      0x1  initTask.o [1]
+  .bss                    zero     0x20027a65      0x1  myprintf.o [1]
+  .bss                    zero     0x20027a66      0x1  shellTask.o [1]
+  .bss                    zero     0x20027a67      0x1  usbd_ctlreq_bl.o [1]
+  CSTACK                           0x20027a68   0x1400  <Block>
+    CSTACK                uninit   0x20027a68   0x1400  <Block tail>
+  HEAP                             0x20028e68   0x1200  <Block>
+    HEAP                  uninit   0x20028e68   0x1200  <Block tail>
+                                 - 0x2002a068  0x18050
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x20e8:
+          0x20025980   0x20e8
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x11d (63% of destination):
+          0x08008008    0x11d
+    1 destination range, total size 0x1c4:
+          0x20000000    0x1c4
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0xd5fc (68% of destination):
+          0x080093ac   0xd5fc
+    1 destination range, total size 0x13964:
+          0x20012018  0x13964
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                       ro code  rw code  ro data  rw data  ro data  rw data
+                                                                      (abs)    (abs)
+    ------                       -------  -------  -------  -------  -------  -------
+G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj: [1]
+    BMI160_ACC_GYRO_Driver.o                2 016    1 376       32
+    BMI160_ACC_GYRO_Driver_HL.o               576      459       92
+    GLOBAL.o                                                     14
+    PowerManager_power.o                      232      160
+    ams361ep01_dsi_vdo.o                    1 156    1 034      356
+    anx7737_driver.o                          232      158
+    audio_alc4040_driver.o                    652      445        8
+    audio_alc5665_driver.o                  3 300    2 253       72
+    bl_header.o                      108                        128       64
+    bq2589x_charger.o                       2 268    1 582      104
+    ccgx_fw.o                               4 964    3 407      280
+    ccgx_fw_io.o                              174      119
+    dfuTask.o                                 124       85        5
+    display_drv.o                              10        7
+    flash_drv.o                             1 244      851
+    fotamode.o                                960      656
+    gpio.o                                  1 088      743
+    gpio_exp.o                                376      280       32
+    hlog.o                                    216      148                     65 540
+    htc_audio_path_service.o                  412      282        4
+    i2c_drv.o                               1 420      970      200
+    init.o                                    304      208        4
+    initTask.o                              1 064      727       10                16
+    main.o                                     20       14
+    max17050_fuel_gauge.o                   2 280    1 679      248
+    misc_data.o                             1 840    1 256    2 648
+    myprintf.o                                 68       46        1
+    ncp6924.o                               1 120      788       36
+    ps176_driver.o                            180      123
+    shellTask.o                             9 396    6 668    1 415
+    startup_stm32f412rx.o             24      748      487
+    stm32f4xx_hal.o                           136       93        4
+    stm32f4xx_hal_cortex.o                    288      198
+    stm32f4xx_hal_dma.o                        36       25
+    stm32f4xx_hal_flash.o                     504      345       32
+    stm32f4xx_hal_flash_ex.o                  344      234
+    stm32f4xx_hal_gpio.o                      492      336
+    stm32f4xx_hal_i2c.o                     1 978    1 351
+    stm32f4xx_hal_msp.o                       364      249
+    stm32f4xx_hal_pcd.o                     2 126    1 452
+    stm32f4xx_hal_pcd_ex.o                    134       93
+    stm32f4xx_hal_pwr.o                        52       35
+    stm32f4xx_hal_rcc.o                       476      327
+    stm32f4xx_hal_rcc_ex.o                  1 188      811
+    stm32f4xx_hal_spi.o                     1 176      803
+    stm32f4xx_hal_uart.o                    1 432      979
+    stm32f4xx_it.o                            110       75
+    stm32f4xx_ll_usb.o                      2 200    1 502
+    system_stm32f4xx.o                80                 3        4
+    task.o                                    146      100       28
+    tc358870xbg_driver.o                   10 484    8 384    1 796
+    usart_drv.o                               332      226      328
+    usb_device_bl.o                            56       38      548
+    usbd_conf_bl.o                            538      368      968
+    usbd_core_bl.o                            644      440
+    usbd_ctlreq_bl.o                          980      671        1
+    usbd_desc_bl.o                            176      156      564
+    usbd_dfu_bl.o                           1 680    1 216    1 404
+    usbd_dfu_if_bl.o                          334      288       88
+    usbd_ioreq_bl.o                            96       65
+    x_pmic.o                                1 108      757       52
+    ---------------------------------------------------------------------------------
+    Total:                           212   68 050   48 631   11 506       64   65 556
+
+command line: [2]
+    ---------------------------------------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    abort.o                            6
+    div.o                                      14       10
+    errno.o                                    12       12        4
+    exit.o                                      4        3
+    isxxx.o                                    20       13
+    localeconv.o                              108      168      136
+    low_level_init.o                   4
+    printf.o                                   36       24
+    putchar.o                                  12       10
+    setlocale.o                                36      104      116
+    snprintf.o                                 68       46
+    strcasecmp.o                               70       48
+    strncmp.o                                  42       29
+    strtoul.o                                   4        3
+    tolower.o                                  20       14
+    xencoding_sb.o                             96       66
+    xfiles.o                                            44      144
+    xgetmemchunk.o                             44       30        4
+    xlocale_c.o                                32       22
+    xmbcurmax.o                                10        7
+    xmbtowc.o                                  32       22
+    xprintffull.o                           4 430    3 026
+    xprout.o                                   22       15
+    xsnprout.o                                 26       18
+    xstoul.o                                  408      279
+    xtls.o                                      2        1
+    xwctomb.o                                  26       17
+    xxmemxfree.o                              128       89
+    xxmemxmalloc.o                            176      122        8
+    ---------------------------------------------------------------------------------
+    Total:                            10    5 878    4 242      412
+
+m7M_tlv.a: [4]
+    DblAdd.o                                  212      146
+    DblCmpGe.o                                 46       33
+    DblCmpLe.o                                 46       31
+    DblDiv.o                                  582      399
+    DblMul.o                                  418      285
+    DblSub.o                                  384      263
+    DblToI32.o                                 88       60
+    FltToDbl.o                                 78       53
+    I32ToDbl.o                                 48       32
+    fpinit_M.o                        26
+    xdnorm.o                                   66       45
+    xdscale.o                                 276      190
+    ---------------------------------------------------------------------------------
+    Total:                            26    2 244    1 537
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                                6        4
+    ABImemcpy_unaligned.o                     118       82
+    ABImemset.o                                94       64
+    ABImemset48.o                              58       39
+    I64DivMod.o                               238      163
+    I64DivZer.o                                 2        1
+    cexit.o                                    10        6
+    cmain.o                           26
+    cstartup_M.o                      12
+    data_init.o                       40
+    lz77_init.o                      450
+    memchr.o                                   88       61
+    strchr.o                                   22       15
+    strcmp_unaligned.o                         66       46
+    strcpy_unaligned.o                         68       46
+    strlen.o                                   54       38
+    strncpy_unaligned.o                       108       74
+    zero_init3.o                      34
+    ---------------------------------------------------------------------------------
+    Total:                           562      932      639
+
+shb_l.a: [6]
+    exit.o                            20
+    ---------------------------------------------------------------------------------
+    Total:                            20
+
+    Gaps                               4       50        2       12
+    Linker created                    40       24       88    9 728
+-------------------------------------------------------------------------------------
+    Grand Total:                     874   77 178   55 143   21 658       64   65 556
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address     Size  Type      Object
+-----                      -------     ----  ----      ------
+?main                   0x08009371           Code  Gb  cmain.o [5]
+AID_ctrl                0x20025838      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+APBAHBPrescTable        0x2001802c     0x10  Data  Gb  stm32f4xx_hal_rcc.o [1]
+BMI160_IO_Init          0x2001f079     0x84  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+BQ25896_Drv             0x200256d8     0x30  Data  Gb  bq2589x_charger.o [1]
+BusFault_Handler        0x200253ff      0x2  Code  Gb  stm32f4xx_it.o [1]
+CMDCacheBuf             0x200267f0    0x410  Data  Gb  shellTask.o [1]
+CMD_Cache_Head          0x20027a24      0x1  Data  Gb  shellTask.o [1]
+CMD_Cache_Tail          0x20027a25      0x1  Data  Gb  shellTask.o [1]
+CSTACK$$Base            0x20027a68            --   Gb  - Linker created -
+CSTACK$$Limit           0x20028e68            --   Gb  - Linker created -
+ChangeTask              0x2001bef7     0x14  Code  Gb  task.o [1]
+CreatTask               0x2001bed1     0x26  Code  Gb  task.o [1]
+CyFindDevices           0x2001f007      0x4  Code  Gb  ccgx_fw_io.o [1]
+CyUsDeviceReset         0x2001dfb3     0x5e  Code  Gb  ccgx_fw.o [1]
+CyUsEnterFlashingMode   0x2001deff     0x56  Code  Gb  ccgx_fw.o [1]
+CyUsGetFwInfo           0x2001dc9b     0xe4  Code  Gb  ccgx_fw.o [1]
+CyUsPDPortDisable       0x2001df55     0x5e  Code  Gb  ccgx_fw.o [1]
+CyUsReadResponse        0x2001dde1    0x11e  Code  Gb  ccgx_fw.o [1]
+CyUsRegisterRead        0x2001f01d      0xa  Code  Gb  ccgx_fw_io.o [1]
+CyUsRegisterWrite       0x2001f011      0xc  Code  Gb  ccgx_fw_io.o [1]
+CyUsValidateFirmware    0x2001e01f     0x5a  Code  Gb  ccgx_fw.o [1]
+CyUsWriteFlashRow       0x2001e091     0x86  Code  Gb  ccgx_fw.o [1]
+DFUTask                 0x200252d1     0x42  Code  Gb  dfuTask.o [1]
+DFUTaskID               0x20027a60      0x1  Data  Gb  dfuTask.o [1]
+DFU_GetStatus           0x2002443d     0xa8  Code  Lc  usbd_dfu_bl.o [1]
+DFU_Upload              0x20024351     0xd4  Code  Lc  usbd_dfu_bl.o [1]
+DFU_move_img            0x20024321     0x30  Code  Gb  usbd_dfu_bl.o [1]
+DebugMon_Handler        0x20025405      0x2  Code  Gb  stm32f4xx_it.o [1]
+Display_ON              0x200250e8      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+Display_off             0x200250f0      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+DoCommand               0x2001b8a7     0x44  Code  Gb  shellTask.o [1]
+EXTI15_10_IRQHandler    0x20025431     0x36  Code  Gb  stm32f4xx_it.o [1]
+Error_Handler           0x2002051f      0x2  Code  Gb  main.o [1]
+FLASH_Erase_Sector      0x2001f7f1     0x48  Code  Gb  stm32f4xx_hal_flash_ex.o [1]
+FLASH_FlushCaches       0x2001f839     0x50  Code  Gb  stm32f4xx_hal_flash_ex.o [1]
+FLASH_MassErase         0x2001f7d1     0x20  Code  Lc  stm32f4xx_hal_flash_ex.o [1]
+FLASH_Program_Byte      0x2001f691     0x1a  Code  Lc  stm32f4xx_hal_flash.o [1]
+FLASH_Program_DoubleWord
+                        0x2001f633     0x22  Code  Lc  stm32f4xx_hal_flash.o [1]
+FLASH_Program_HalfWord  0x2001f673     0x1e  Code  Lc  stm32f4xx_hal_flash.o [1]
+FLASH_Program_Word      0x2001f655     0x1e  Code  Lc  stm32f4xx_hal_flash.o [1]
+FLASH_SetErrorCode      0x2001f6ab     0x74  Code  Lc  stm32f4xx_hal_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x2001f5e3     0x50  Code  Gb  stm32f4xx_hal_flash.o [1]
+FS_Desc                 0x20025728     0x1c  Data  Gb  usbd_desc_bl.o [1]
+GetHexVal               0x2001e135     0x2e  Code  Gb  ccgx_fw.o [1]
+HAL_DMA_Abort_IT        0x20020c25     0x24  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_Delay               0x20014f21     0x18  Code  Wk  stm32f4xx_hal.o [1]
+HAL_FLASHEx_Erase       0x2001f73d     0x94  Code  Gb  stm32f4xx_hal_flash_ex.o [1]
+HAL_FLASH_Lock          0x2001f5cb      0x8  Code  Gb  stm32f4xx_hal_flash.o [1]
+HAL_FLASH_OB_Lock       0x2001f5d9      0xa  Code  Gb  stm32f4xx_hal_flash.o [1]
+HAL_FLASH_Program       0x2001f545     0x72  Code  Gb  stm32f4xx_hal_flash.o [1]
+HAL_FLASH_Unlock        0x2001f5b7     0x14  Code  Gb  stm32f4xx_hal_flash.o [1]
+HAL_GPIO_EXTI_Callback  0x20017d2f      0x2  Code  Gb  gpio.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                        0x200152ab     0x14  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_Init           0x20015101    0x196  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin        0x20015297      0xc  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x200152a3      0x8  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GetTick             0x20014f1b      0x6  Code  Wk  stm32f4xx_hal.o [1]
+HAL_I2C_Init            0x20015c75     0xc8  Code  Gb  stm32f4xx_hal_i2c.o [1]
+HAL_I2C_Mem_Read        0x20015ea3    0x1d4  Code  Gb  stm32f4xx_hal_i2c.o [1]
+HAL_I2C_Mem_Write       0x20015d79    0x100  Code  Gb  stm32f4xx_hal_i2c.o [1]
+HAL_I2C_MspInit         0x20017701     0x6e  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_IncTick             0x20014f11      0xa  Code  Wk  stm32f4xx_hal.o [1]
+HAL_Init                0x20014ebd     0x30  Code  Gb  stm32f4xx_hal.o [1]
+HAL_InitTick            0x20014eed     0x24  Code  Wk  stm32f4xx_hal.o [1]
+HAL_MspInit             0x200176a1     0x60  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_NVIC_DisableIRQ     0x2001760f      0xa  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_EnableIRQ      0x20017603      0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority    0x200175bf     0x44  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                        0x200175a5     0x1a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SystemReset    0x20017621     0x1a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_PCDEx_ActivateBCD   0x20023181     0x10  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCDEx_ActivateLPM   0x20023155     0x22  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCDEx_LPM_Callback  0x2002317f      0x2  Code  Wk  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCDEx_SetRxFiFo     0x2002314d      0x8  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCDEx_SetTxFiFo     0x20023111     0x3c  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCD_ConnectCallback
+                        0x20022fed      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_DataInStageCallback
+                        0x20022f73     0x10  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_DataOutStageCallback
+                        0x20022f61     0x12  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_DisconnectCallback
+                        0x20022ff5      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_EP_ClrStall     0x20022e25     0x44  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Open         0x20022ce5     0x4c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Receive      0x20022d3d     0x3a  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_SetStall     0x20022dcf     0x56  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Transmit     0x20022d77     0x38  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_IRQHandler      0x200227ab    0x4a2  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_ISOINIncompleteCallback
+                        0x20022fe5      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_ISOOUTIncompleteCallback
+                        0x20022fdd      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_Init            0x200226a5     0xbe  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_MspInit         0x20022ef5     0x60  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_ResetCallback   0x20022f8b     0x20  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_ResumeCallback  0x20022fd5      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_SOFCallback     0x20022f83      0x8  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_SetAddress      0x20022cc1     0x1c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_SetupStageCallback
+                        0x20022f55      0xc  Code  Gb  usbd_conf_bl.o [1]
+HAL_PCD_Start           0x2002276d     0x1c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_Stop            0x20022789     0x22  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_SuspendCallback
+                        0x20022fab     0x2a  Code  Gb  usbd_conf_bl.o [1]
+HAL_PWR_EnterSTOPMode   0x2001fa41     0x2c  Code  Gb  stm32f4xx_hal_pwr.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                        0x20020069    0x230  Code  Gb  stm32f4xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig     0x20017e61    0x13c  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x20017fe3      0x6  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq    0x20017fe9     0x12  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq    0x20017ffb     0x10  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x20017f9d     0x46  Code  Wk  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x20020299    0x240  Code  Gb  stm32f4xx_hal_rcc_ex.o [1]
+HAL_SPI_DeInit          0x2001fc1f     0x2e  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_GetState        0x2001ff81      0x6  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_Init            0x2001fba5     0x7a  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_MspDeInit       0x2001fc4f      0x2  Code  Wk  stm32f4xx_hal_spi.o [1]
+HAL_SPI_MspInit         0x2001fc4d      0x2  Code  Wk  stm32f4xx_hal_spi.o [1]
+HAL_SPI_Transmit        0x2001fc51    0x152  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_TransmitReceive
+                        0x2001fdad    0x1b6  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x20017663     0x14  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_SYSTICK_Callback    0x20018c21     0x26  Code  Gb  initTask.o [1]
+HAL_SYSTICK_Config      0x2001763b     0x28  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler  0x20017699      0x8  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_UART_ErrorCallback  0x200205bd     0x1c  Code  Gb  usart_drv.o [1]
+HAL_UART_IRQHandler     0x2002080b    0x156  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_Init           0x2002068d     0x30  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_MspInit        0x20017789     0x66  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_UART_Receive_IT     0x200207b5     0x50  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_RxCpltCallback
+                        0x2002059d     0x20  Code  Gb  usart_drv.o [1]
+HAL_UART_Transmit       0x200206f9     0xa8  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_TxCpltCallback
+                        0x2002096d      0x2  Code  Wk  stm32f4xx_hal_uart.o [1]
+HEAP$$Base              0x20028e68            --   Gb  - Linker created -
+HEAP$$Limit             0x2002a068            --   Gb  - Linker created -
+HTC_i2c_polling_Read    0x20014a7b     0x28  Code  Gb  i2c_drv.o [1]
+HTC_i2c_polling_Write   0x20014aa3     0x28  Code  Gb  i2c_drv.o [1]
+HardFault_Handler       0x200253fb      0x2  Code  Gb  stm32f4xx_it.o [1]
+I2C_FailCounter         0x200277d8      0x8  Data  Lc  i2c_drv.o [1]
+I2C_GetHandleByAddr     0x2001490d     0x5a  Code  Gb  i2c_drv.o [1]
+I2C_IsAcknowledgeFailed
+                        0x20016405     0x2a  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_RequestMemoryRead   0x20016193     0xaa  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_RequestMemoryWrite  0x200160fd     0x7e  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_WaitOnBTFFlagUntilTimeout
+                        0x20016369     0x34  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_WaitOnFlagUntilTimeout
+                        0x20016253     0x5e  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_WaitOnMasterAddressFlagUntilTimeout
+                        0x200162b1     0x84  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_WaitOnRXNEFlagUntilTimeout
+                        0x200163b9     0x4c  Code  Lc  stm32f4xx_hal_i2c.o [1]
+I2C_WaitOnTXEFlagUntilTimeout
+                        0x20016335     0x34  Code  Lc  stm32f4xx_hal_i2c.o [1]
+IOEXP_REG_DATA          0x20025804      0xc  Data  Lc  gpio_exp.o [1]
+IdelTask                0x20018c47     0xd0  Code  Gb  initTask.o [1]
+InStream_Read           0x08009001     0x22  Code  Lc  lz77_init.o [5]
+InitTask                0x20018d73    0x100  Code  Gb  initTask.o [1]
+InitTaskID              0x20027a64      0x1  Data  Gb  initTask.o [1]
+JumpAddress             0x20027a54      0x4  Data  Gb  initTask.o [1]
+Jump_To_Application     0x20027a50      0x4  Data  Gb  initTask.o [1]
+LCM_GetDriver           0x20015a05      0x4  Code  Gb  ams361ep01_dsi_vdo.o [1]
+LTPS_update             0x20025098      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+LoadInt                 0x20016a61     0x6e  Code  Lc  xprintffull.o [3]
+MAX17050_Drv            0x20025708     0x20  Data  Gb  max17050_fuel_gauge.o [1]
+MEM_If_DeInit_FS        0x20024ddb      0xa  Code  Lc  usbd_dfu_if_bl.o [1]
+MEM_If_Erase_FS         0x20024de5     0xb4  Code  Lc  usbd_dfu_if_bl.o [1]
+MEM_If_GetStatus_FS     0x20024f13      0xc  Code  Lc  usbd_dfu_if_bl.o [1]
+MEM_If_Init_FS          0x20024dd1      0xa  Code  Lc  usbd_dfu_if_bl.o [1]
+MEM_If_Read_FS          0x20024efd     0x16  Code  Lc  usbd_dfu_if_bl.o [1]
+MEM_If_Write_FS         0x20024ec9     0x34  Code  Lc  usbd_dfu_if_bl.o [1]
+MISC_DataStructure      0x20025980    0xa58  Data  Gb  misc_data.o [1]
+MX_I2C1_Init            0x20014a1f     0x32  Code  Gb  i2c_drv.o [1]
+MX_I2C2_Init            0x20014a51     0x2a  Code  Gb  i2c_drv.o [1]
+MX_NVIC_Init            0x20017d19     0x16  Code  Gb  gpio.o [1]
+MX_USB_DEVICE_BL_Init   0x2002534d     0x38  Code  Gb  usb_device_bl.o [1]
+MX_XA_GPIO_Init         0x200179c1     0xee  Code  Lc  gpio.o [1]
+MX_XB_GPIO_Init         0x20017acf     0xb6  Code  Lc  gpio.o [1]
+MX_XC_GPIO_Init         0x20017bb7     0xe4  Code  Lc  gpio.o [1]
+MemManage_Handler       0x200253fd      0x2  Code  Gb  stm32f4xx_it.o [1]
+NCP6924_Deinit          0x200249f5     0x24  Code  Lc  ncp6924.o [1]
+NCP6924_Drv             0x200257cc     0x14  Data  Gb  ncp6924.o [1]
+NCP6924_Init            0x20024b35     0xb2  Code  Lc  ncp6924.o [1]
+NCP6924_LDO_Enable      0x20024a19     0xb0  Code  Lc  ncp6924.o [1]
+NCP6924_LDO_GetEnableState
+                        0x20024ac9     0x6c  Code  Lc  ncp6924.o [1]
+NCP6924_LDO_SetVoltage  0x200249e1     0x14  Code  Lc  ncp6924.o [1]
+NMI_Handler             0x200253f9      0x2  Code  Gb  stm32f4xx_it.o [1]
+NVIC_GetPriorityGrouping
+                        0x20017581      0xa  Code  Lc  stm32f4xx_hal_cortex.o [1]
+NVIC_SetPriority        0x2001758b     0x1a  Code  Lc  stm32f4xx_hal_cortex.o [1]
+OTG_FS_IRQHandler       0x20025417      0x6  Code  Gb  stm32f4xx_it.o [1]
+OTP_key_lock            0x200250e0      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+OTP_key_unlock          0x200250d4      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+OTP_loading             0x200250b8      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+OutStream_Write         0x08009023     0x40  Code  Lc  lz77_init.o [5]
+PCD_WriteEmptyTxFifo    0x20022e69     0x8a  Code  Lc  stm32f4xx_hal_pcd.o [1]
+PMIC_Data               0x20027990     0x18  Data  Lc  x_pmic.o [1]
+PMIC_Fun                0x200279b8      0xc  Data  Lc  x_pmic.o [1]
+PMIC_Handle             0x200279a8     0x10  Data  Lc  x_pmic.o [1]
+PWRMGR_SYSTEM_POWER_ENTER_STOP_MODE
+                        0x2001c4cd     0x20  Code  Gb  PowerManager_power.o [1]
+PWRMGR_SYSTEM_POWER_EXIT_STOP_MODE
+                        0x2001c4ed     0x1c  Code  Gb  PowerManager_power.o [1]
+PWRMGR_SYSTEM_POWER_POWEROFF
+                        0x2001c50d     0x1a  Code  Gb  PowerManager_power.o [1]
+PWRMGR_SYSTEM_POWER_POWERON
+                        0x2001c527     0x2a  Code  Gb  PowerManager_power.o [1]
+PWRMGR_state_change     0x2001c551     0x32  Code  Gb  PowerManager_power.o [1]
+ParseCommandAndData     0x2001b767     0xbe  Code  Gb  shellTask.o [1]
+PendSV_Handler          0x20025407      0x2  Code  Gb  stm32f4xx_it.o [1]
+RTOS_I2C_Init           0x20014c55     0x14  Code  Gb  i2c_drv.o [1]
+RTOS_I2C_ReadBuffer     0x20014ae3     0x82  Code  Gb  i2c_drv.o [1]
+RTOS_I2C_WriteBuffer    0x20014b6b     0x80  Code  Gb  i2c_drv.o [1]
+Region$$Table$$Base     0x080092fc            --   Gb  - Linker created -
+Region$$Table$$Limit    0x08009344            --   Gb  - Linker created -
+RxChar                  0x200274ec    0x100  Data  Lc  usart_drv.o [1]
+RxCharIndexIn           0x20027910      0x4  Data  Lc  usart_drv.o [1]
+SPI2_Error              0x2001f135      0xe  Code  Lc  BMI160_ACC_GYRO_Driver_HL.o [1]
+SPI_CheckFlag_BSY       0x2002001d     0x20  Code  Lc  stm32f4xx_hal_spi.o [1]
+SPI_WaitFlagStateUntilTimeout
+                        0x2001ff8d     0x90  Code  Lc  stm32f4xx_hal_spi.o [1]
+SVC_Handler             0x20025403      0x2  Code  Gb  stm32f4xx_it.o [1]
+ShellRecvProcess        0x2001b961     0x44  Code  Gb  shellTask.o [1]
+ShellTask               0x2001b9a5      0x2  Code  Gb  shellTask.o [1]
+ShellTaskID             0x20027a66      0x1  Data  Gb  shellTask.o [1]
+Shell_init              0x2001b9e1     0x34  Code  Gb  shellTask.o [1]
+Shell_parse_cmd         0x2001b8eb     0x6e  Code  Gb  shellTask.o [1]
+Shell_rec_buf           0x2001b9a7     0x3a  Code  Gb  shellTask.o [1]
+Sleep_Out               0x200250bc      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+Spi2Timeout             0x200254c0      0x4  Data  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+SysTick_Handler         0x20025409      0xe  Code  Gb  stm32f4xx_it.o [1]
+SystemClock_Config      0x2001fa75     0xd2  Code  Gb  init.o [1]
+SystemCoreClock         0x20025970      0x4  Data  Gb  system_stm32f4xx.o [1]
+SystemInit              0x08009261     0x3a  Code  Gb  system_stm32f4xx.o [1]
+TASKFunc                0x20027a04     0x18  Data  Lc  task.o [1]
+TCA6418_GPIO_BITMAP     0x200257b8     0x14  Data  Lc  gpio_exp.o [1]
+TE_pin_normal_low       0x200250dc      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+TaskInitFlag            0x20027a00      0x1  Data  Gb  task.o [1]
+UART_DMAAbortOnError    0x200209ed     0x10  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndRxTransfer      0x200209cf     0x1c  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Receive_IT         0x200209fd     0x7e  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_SetConfig          0x20020a89    0x18e  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                        0x2002096f     0x60  Code  Lc  stm32f4xx_hal_uart.o [1]
+USART1_IRQHandler       0x2002541f      0x2  Code  Gb  stm32f4xx_it.o [1]
+USART2_IRQHandler       0x2002541d      0x2  Code  Gb  stm32f4xx_it.o [1]
+USBD_ClrClassConfig     0x2002320f      0xa  Code  Gb  usbd_core_bl.o [1]
+USBD_CtlContinueRx      0x20023821      0x2  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_CtlContinueSendData
+                        0x200237ff      0x2  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_CtlError           0x20023797     0x16  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_CtlPrepareRx       0x2002380f     0x12  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_CtlReceiveStatus   0x2002383b      0xa  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_CtlSendData        0x200237f1      0xe  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_CtlSendStatus      0x20023831      0xa  Code  Gb  usbd_ioreq_bl.o [1]
+USBD_DFU                0x2002569c     0x3c  Data  Gb  usbd_dfu_bl.o [1]
+USBD_DFU_CfgDesc        0x20025744     0x1c  Data  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_DataIn         0x20024159      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_DataOut        0x200242b5      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_DeInit         0x20023f59     0x36  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_DeviceQualifierDesc
+                        0x20025810      0xc  Data  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_EP0_RxReady    0x2002415d      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_EP0_TxReady    0x20024161    0x148  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_GetCfgDesc     0x2002414f      0xa  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_GetDeviceQualifierDesc
+                        0x200242b9      0x8  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_GetUsrStringDesc
+                        0x200242c1     0x1c  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_Init           0x20023f19     0x40  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_IsoINIncomplete
+                        0x200242ad      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_IsoOutIncomplete
+                        0x200242b1      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_RegisterMedia  0x200242dd      0xa  Code  Gb  usbd_dfu_bl.o [1]
+USBD_DFU_SOF            0x200242a9      0x4  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_Setup          0x20023f91    0x1be  Code  Lc  usbd_dfu_bl.o [1]
+USBD_DFU_fops_FS        0x20025760     0x1c  Data  Gb  usbd_dfu_if_bl.o [1]
+USBD_FS_ConfigStrDescriptor
+                        0x2002513d      0xa  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_DeviceDesc      0x200257e0     0x14  Data  Gb  usbd_desc_bl.o [1]
+USBD_FS_DeviceDescriptor
+                        0x20025105      0x8  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_InterfaceStrDescriptor
+                        0x20025147      0xa  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_LangIDStrDescriptor
+                        0x2002510d      0x8  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_ManufacturerStrDescriptor
+                        0x2002511f      0x8  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_ProductStrDescriptor
+                        0x20025115      0xa  Code  Gb  usbd_desc_bl.o [1]
+USBD_FS_SerialStrDescriptor
+                        0x20025133      0xa  Code  Gb  usbd_desc_bl.o [1]
+USBD_GetDescriptor      0x20023669     0xf8  Code  Lc  usbd_ctlreq_bl.o [1]
+USBD_GetString          0x200237ad     0x44  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_Init               0x20023197     0x2a  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_ClearStallEP    0x200230b9      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_DataInStage     0x200232d7     0xa4  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_DataOutStage    0x20023271     0x66  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_DevConnected    0x200233ff      0x4  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_DevDisconnected
+                        0x20023403     0x12  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_Init            0x20022ffd     0x66  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_IsStallEP       0x200230c7     0x1e  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_IsoINIncomplete
+                        0x200233f7      0x4  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_IsoOUTIncomplete
+                        0x200233fb      0x4  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_OpenEP          0x20023097     0x14  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_PrepareReceive  0x20023101      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_Reset           0x2002337b     0x42  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_Resume          0x200233cf      0x4  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_SOF             0x200233db     0x1c  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_SetSpeed        0x200233bd      0x6  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_SetUSBAddress   0x200230e5      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_SetupStage      0x20023219     0x58  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_StallEP         0x200230ab      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_Start           0x2002307b      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_Stop            0x20023089      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LL_Suspend         0x200233c3      0xc  Code  Gb  usbd_core_bl.o [1]
+USBD_LL_Transmit        0x200230f3      0xe  Code  Gb  usbd_conf_bl.o [1]
+USBD_LangIDDesc         0x20025974      0x4  Data  Gb  usbd_desc_bl.o [1]
+USBD_ParseSetupRequest  0x2002376f     0x28  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_RegisterClass      0x200231c1     0x10  Code  Gb  usbd_core_bl.o [1]
+USBD_SetClassConfig     0x200231f9     0x16  Code  Gb  usbd_core_bl.o [1]
+USBD_Start              0x200231d1      0xa  Code  Gb  usbd_core_bl.o [1]
+USBD_StdDevReq          0x2002341d    0x13c  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_StdEPReq           0x20023595     0xc8  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_StdItfReq          0x2002355d     0x32  Code  Gb  usbd_ctlreq_bl.o [1]
+USBD_Stop               0x200231db     0x12  Code  Gb  usbd_core_bl.o [1]
+USBD_StrDesc            0x200271ec    0x200  Data  Gb  usbd_desc_bl.o [1]
+USB_ActivateEndpoint    0x20022051     0x76  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ActivateSetup       0x200225ff     0x2e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_CoreInit            0x20021e0d     0x66  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_CoreReset           0x2002265d     0x2a  Code  Lc  stm32f4xx_ll_usb.o [1]
+USB_DevConnect          0x20022577      0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DevDisconnect       0x20022585      0xc  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DevInit             0x20021ead    0x132  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DisableGlobalInt    0x20021e7b      0x6  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0StartXfer        0x200222f5    0x132  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0_OutStart        0x2002262d     0x30  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPClearStall        0x200224bf     0x5a  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPSetStall          0x20022471     0x4e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPStartXfer         0x200220c7    0x22e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EnableGlobalInt     0x20021e73      0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_FlushRxFifo         0x20021ffd     0x1a  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_FlushTxFifo         0x20021fdf     0x1e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetDevSpeed         0x2002201d     0x34  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetMode             0x200225f7      0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllInEpInterrupt
+                        0x200225b3      0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllOutEpInterrupt
+                        0x200225a5      0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevInEPInterrupt
+                        0x200225d5     0x22  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevOutEPInterrupt
+                        0x200225c1     0x14  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadInterrupts      0x2002259d      0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadPacket          0x20022453     0x1e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetCurrentMode      0x20021e87     0x26  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetDevAddress       0x2002255b     0x12  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetDevSpeed         0x20022017      0x6  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_StopDevice          0x20022519     0x42  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_WritePacket         0x2002242d     0x26  Code  Gb  stm32f4xx_ll_usb.o [1]
+UsageFault_Handler      0x20025401      0x2  Code  Gb  stm32f4xx_it.o [1]
+VLIN1_ctrl              0x2002508c      0xc  Data  Lc  ams361ep01_dsi_vdo.o [1]
+VR_flash_erase          0x2001bf91    0x138  Code  Gb  flash_drv.o [1]
+VR_flash_read           0x2001bf6f     0x22  Code  Gb  flash_drv.o [1]
+VR_flash_write          0x2001c0c9     0xfc  Code  Gb  flash_drv.o [1]
+_BitParament0           0x20027a3c      0x4  Data  Gb  GLOBAL.o [1]
+_EncodingSb_Mbtowc      0x2001904f     0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x20019035     0x1a  Code  Gb  xencoding_sb.o [3]
+_GenldFull              0x200172eb    0x24c  Code  Lc  xprintffull.o [3]
+_IsdstStr               0x20025388      0x4  Data  Gb  setlocale.o [3]
+_LdtobFull              0x20016ee9    0x3fc  Code  Lc  xprintffull.o [3]
+_LitobFull              0x20016de1    0x106  Code  Lc  xprintffull.o [3]
+_LocaleC_isspace        0x20020677     0x14  Code  Gb  xlocale_c.o [3]
+_LocaleC_tolower        0x2002005d      0xc  Code  Gb  xlocale_c.o [3]
+_LocaleEncoding         0x20019023      0xe  Code  Gb  setlocale.o [3]
+_LocaleForCat           0x20019011     0x12  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x200253a8     0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x2002538c     0x1c  Data  Gb  setlocale.o [3]
+_Locale_aeabi_lconv     0x20025298     0x38  Data  Gb  localeconv.o [3]
+_Locale_lconv           0x20025248     0x50  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x2001803d     0x20  Code  Gb  xmbtowc.o [3]
+_PrintfFull             0x20016431    0x618  Code  Gb  xprintffull.o [3]
+_Prout                  0x20025795     0x16  Code  Gb  xprout.o [3]
+_PutcharsFull           0x20017537     0x2e  Code  Lc  xprintffull.o [3]
+_PutstrFull             0x20016acf    0x30c  Code  Lc  xprintffull.o [3]
+_SNProut                0x20014f4b     0x1a  Code  Gb  xsnprout.o [3]
+_TzoneStr               0x20025384      0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x200181c1     0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_cdcmple         0x20018405           Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x20018435           Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x20018579           Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x200185a5           Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x20018925           Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x20018781           Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x20018601           Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x20020051      0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x2001dc15           Code  Gb  FltToDbl.o [4]
+__aeabi_i2d             0x200185d1           Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x200190c1           Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x20014f45           Code  Gb  ABImemclr4.o [5]
+__aeabi_memset4         0x2001780d           Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x2001780d           Code  Gb  ABImemset48.o [5]
+__aeabi_ui2d            0x200185e5           Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x200182d5           Code  Gb  I64DivMod.o [5]
+__as_entries_start      0xffffffff            --   Gb  command line/config [2]
+__as_table_start        0xffffffff            --   Gb  command line/config [2]
+__audio_path_setup      0x2001cd95     0x5a  Code  Lc  htc_audio_path_service.o [1]
+__checksum              0x0801fffc      0x4  Data  Gb  Place holder __checksum
+__checksum_begin {Abs}  0x08008000            --   Gb  command line/config [2]
+__checksum_end {Abs}    0x0801fffb            --   Gb  command line/config [2]
+__cmain                 0x08009371           Code  Gb  cmain.o [5]
+__data_Aldata           0x20027a2c      0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x20019095     0x2c  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x080091c9     0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x200183c3     0x42  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x20018465    0x114  Code  Gb  xdscale.o [4]
+__iar_Errno             0x20025978      0x4  Data  Gb  errno.o [3]
+__iar_Locale_lconv_init
+                        0x20018b6d     0x3a  Code  Gb  localeconv.o [3]
+__iar_Mbcurmax          0x20018105      0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x200180ad           Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x20017815           Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x20017815           Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x20017e01           Code  Gb  ABImemset.o [5]
+__iar_Stdout            0x200255e4     0x40  Data  Gb  xfiles.o [3]
+__iar_Stoul             0x2001f9d9      0x4  Code  Gb  xstoul.o [3]
+__iar_Stoulx            0x2001f895    0x13e  Code  Gb  xstoul.o [3]
+__iar_Strchr            0x2001805d           Code  Gb  strchr.o [5]
+__iar_d2uiz             0x200185b1           Code  Gb  DblToI32.o [4]
+__iar_dadd              0x200190c5           Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x080092b1     0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x20019199      0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x20018615           Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x20018627           Code  Gb  DblSub.o [4]
+__iar_init_vfp          0x08009345           Code  Gb  fpinit_M.o [4]
+__iar_lz77_init3        0x08009063    0x160  Code  Gb  lz77_init.o [5]
+__iar_program_start     0x080093a1           Code  Gb  cstartup_M.o [5]
+__iar_strcmp            0x2001bf1d           Code  Gb  strcmp_unaligned.o [5]
+__iar_ui2d              0x200185e9           Code  Gb  I32ToDbl.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x200181dd           Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x200181fd           Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x200181fd           Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned_strcmp  0x2001bf1d           Code  Gb  strcmp_unaligned.o [5]
+__iar_unaligned_strcpy  0x2001c43d           Code  Gb  strcpy_unaligned.o [5]
+__iar_unaligned_strncpy
+                        0x20015bc5           Code  Gb  strncpy_unaligned.o [5]
+__iar_zero_init3        0x080092d9     0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800938b      0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08008000           Data  Gb  startup_stm32f412rx.o [1]
+__vector_table_RAM0     0x20000000           Data  Gb  startup_stm32f412rx.o [1]
+_call_main              0x0800937d           Code  Gb  cmain.o [5]
+_exit                   0x20025825           Code  Gb  cexit.o [5]
+_main                   0x08009387           Code  Gb  cmain.o [5]
+abort                   0x080091c3      0x6  Code  Gb  abort.o [3]
+alc5665_calibration_1_list
+                        0x2001db80     0x3c  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_calibration_50_list
+                        0x2001dbbc      0xc  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_evm_init_list   0x2001daac     0xd4  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_hdmi_path_list  0x2001dbc8     0x14  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_loopback_list   0x2001dbf0     0x14  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_lout_mute_list  0x2001dc04      0x8  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_lout_unmute_list
+                        0x2001dc0c      0x8  Data  Lc  audio_alc5665_driver.o [1]
+alc5665_usb_path_list   0x2001dbdc     0x14  Data  Lc  audio_alc5665_driver.o [1]
+alt5665_audio_calibration_reg
+                        0x2001d03f     0x54  Code  Lc  audio_alc5665_driver.o [1]
+alt5665_audio_init_reg  0x2001d01d     0x22  Code  Lc  audio_alc5665_driver.o [1]
+alt5665_audio_path_set  0x2001d179     0xe0  Code  Gb  audio_alc5665_driver.o [1]
+alt5665_regs_set        0x2001cfdf     0x3e  Code  Lc  audio_alc5665_driver.o [1]
+ams361ep01_dsi_vdo_lcm_drv
+                        0x20025558     0x48  Data  Gb  ams361ep01_dsi_vdo.o [1]
+audio_alc4040_audio_path_set
+                        0x2001f2ed     0x74  Code  Gb  audio_alc4040_driver.o [1]
+audio_alc4040_driver_init
+                        0x2001f361     0x3e  Code  Gb  audio_alc4040_driver.o [1]
+audio_alc5665_amp_power_control
+                        0x2001d093     0x1a  Code  Lc  audio_alc5665_driver.o [1]
+audio_alc5665_audio_amp_power_get
+                        0x2001d16f      0x8  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_audio_amp_power_set
+                        0x2001d0ad     0x3c  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_audio_power_get
+                        0x2001d167      0x8  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_audio_power_set
+                        0x2001d113     0x54  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_driver_init
+                        0x2001d259    0x14a  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_i2c_read  0x2001cf31     0x56  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_i2c_write
+                        0x2001cf87     0x48  Code  Gb  audio_alc5665_driver.o [1]
+audio_alc5665_power_control
+                        0x2001d0e9     0x2a  Code  Lc  audio_alc5665_driver.o [1]
+audio_mfg_cmd           0x2001ae69    0x24c  Code  Gb  shellTask.o [1]
+audio_path_get          0x2001ce23      0xa  Code  Gb  htc_audio_path_service.o [1]
+audio_path_service_init
+                        0x2001ce2d     0x44  Code  Gb  htc_audio_path_service.o [1]
+audio_path_set          0x2001cdef     0x34  Code  Gb  htc_audio_path_service.o [1]
+bl_header               0x08008fd0     0x10  Data  Gb  bl_header.o [1]
+bmi160_accel_mode       0x2001ca11      0x2  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_delay_ms         0x2001f283      0x4  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+bmi160_get_accel_power_mode_stat
+                        0x2001c687     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_get_accel_range  0x2001c849     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_get_gyro_power_mode_stat
+                        0x2001c66b     0x1c  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_get_gyro_range   0x2001c917     0x1c  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_gyro_mode        0x2001ca13      0x2  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_init             0x2001c5f5     0x36  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_init_config      0x2001ca15    0x142  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_init_sensor      0x2001c5b5     0x1c  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_mag_init         0x2001cb99     0xa2  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_mag_manual_disable
+                        0x2001cd09     0x48  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_mag_manual_enable
+                        0x2001cd5b     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_mag_read_reg     0x2001cc87     0x74  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_read_accel_xyz   0x2001c6d1     0x24  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_read_gyro_xyz    0x2001c6ad     0x24  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_read_reg         0x2001c645     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_accel_output_data_rate
+                        0x2001c735     0xac  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_accel_range  0x2001c871     0x44  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_accel_under_sampling_parameter
+                        0x2001c7f3     0x2c  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_command_register
+                        0x2001c9f1     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_gyro_output_data_rate
+                        0x2001c8b5     0x42  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_set_gyro_range   0x2001c93d     0x36  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi160_spi2_cs          0x2001f0fd     0x38  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+bmi160_spi_bus_read     0x2001f143     0x70  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+bmi160_spi_bus_write    0x2001f1b3     0x48  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+bmi160_write_reg        0x2001c62b     0x1a  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+bmi_is_mag_manual       0x2001cc67     0x20  Code  Lc  BMI160_ACC_GYRO_Driver.o [1]
+boot_type               0x20002000     0x10  Data  Gb  initTask.o [1]
+bq25896_get_charging_state
+                        0x200218a3      0xc  Code  Lc  bq2589x_charger.o [1]
+bq25896_get_pg_state    0x20021903     0x12  Code  Lc  bq2589x_charger.o [1]
+bq25896_power_off       0x2002191b      0x4  Code  Lc  bq2589x_charger.o [1]
+bq25896_power_reset     0x2002191f      0x4  Code  Lc  bq2589x_charger.o [1]
+bq25896_set_hiz_mode    0x200218ef     0x14  Code  Lc  bq2589x_charger.o [1]
+bq2589x_adc_read_vbus_volt
+                        0x20021653     0x28  Code  Gb  bq2589x_charger.o [1]
+bq2589x_adc_start       0x200215f5     0x56  Code  Gb  bq2589x_charger.o [1]
+bq2589x_charge_enable_or_disable
+                        0x200218bf      0xc  Code  Lc  bq2589x_charger.o [1]
+bq2589x_deinit          0x200219bb     0x1e  Code  Lc  bq2589x_charger.o [1]
+bq2589x_dev             0x20027958     0x38  Data  Lc  bq2589x_charger.o [1]
+bq2589x_disable_stat_pin
+                        0x2002170d      0x4  Code  Gb  bq2589x_charger.o [1]
+bq2589x_disable_watchdog_timer
+                        0x20021707      0x6  Code  Gb  bq2589x_charger.o [1]
+bq2589x_enableDisable_charger
+                        0x200215e5     0x10  Code  Lc  bq2589x_charger.o [1]
+bq2589x_enter_hiz_mode  0x20021727      0x4  Code  Gb  bq2589x_charger.o [1]
+bq2589x_enter_ship_mode
+                        0x2002171f      0x8  Code  Gb  bq2589x_charger.o [1]
+bq2589x_exit_hiz_mode   0x2002172b      0x2  Code  Gb  bq2589x_charger.o [1]
+bq2589x_get_charging_status
+                        0x200216d7     0x24  Code  Gb  bq2589x_charger.o [1]
+bq2589x_get_pg_status   0x200215bf     0x26  Code  Gb  bq2589x_charger.o [1]
+bq2589x_get_vbus_volt   0x200218af     0x10  Code  Lc  bq2589x_charger.o [1]
+bq2589x_init            0x20021923     0x98  Code  Lc  bq2589x_charger.o [1]
+bq2589x_init_device     0x20021741    0x158  Code  Lc  bq2589x_charger.o [1]
+bq2589x_pumpx_enable    0x20021733      0xa  Code  Gb  bq2589x_charger.o [1]
+bq2589x_read_byte       0x20021531     0x36  Code  Lc  bq2589x_charger.o [1]
+bq2589x_reset_chip      0x20021717      0x8  Code  Gb  bq2589x_charger.o [1]
+bq2589x_set_charge_curr_limit
+                        0x200218e3      0xc  Code  Lc  bq2589x_charger.o [1]
+bq2589x_set_charge_volt_limit
+                        0x200218d7      0xc  Code  Lc  bq2589x_charger.o [1]
+bq2589x_set_chargecurr  0x20021681      0xe  Code  Gb  bq2589x_charger.o [1]
+bq2589x_set_chargevolt  0x200216a3     0x14  Code  Gb  bq2589x_charger.o [1]
+bq2589x_set_in_curr_limit
+                        0x200218cb      0xc  Code  Lc  bq2589x_charger.o [1]
+bq2589x_set_input_curr_limit
+                        0x200216bb      0xe  Code  Gb  bq2589x_charger.o [1]
+bq2589x_set_term_curr   0x2002168f     0x10  Code  Gb  bq2589x_charger.o [1]
+bq2589x_set_vindpm_offset
+                        0x200216c9      0xe  Code  Gb  bq2589x_charger.o [1]
+bq2589x_update_bits     0x20021567     0x58  Code  Lc  bq2589x_charger.o [1]
+bsp_mcu_gpio_enable     0x200152ed     0x2c  Code  Gb  x_pmic.o [1]
+bsp_pmic_get_battery_soc
+                        0x2001551b     0x22  Code  Gb  x_pmic.o [1]
+bsp_pmic_get_handle     0x200155ff     0x10  Code  Gb  x_pmic.o [1]
+bsp_pmic_get_pg_status  0x200154c1     0x30  Code  Gb  x_pmic.o [1]
+bsp_pmic_init           0x2001554b     0xb4  Code  Gb  x_pmic.o [1]
+bsp_pmic_power_enable   0x20015319    0x166  Code  Gb  x_pmic.o [1]
+bsp_pmic_power_off      0x2001549b     0x26  Code  Gb  x_pmic.o [1]
+bsp_pmic_power_up_sequence
+                        0x20015485     0x16  Code  Gb  x_pmic.o [1]
+bsp_pmic_set_charger_enableDisable
+                        0x200154f1     0x22  Code  Gb  x_pmic.o [1]
+build_date              0x08008fe0     0x10  Data  Gb  bl_header.o [1]
+build_time              0x08008ff0     0x10  Data  Gb  bl_header.o [1]
+burst_read              0x2001f1fb     0x66  Code  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+ccg4_read_version       0x2001ab65     0x68  Code  Gb  shellTask.o [1]
+ccgx_dump_fw_info       0x2001e52f     0xe8  Code  Gb  ccgx_fw.o [1]
+ccgx_enter_bl_mode      0x2001e163     0xb4  Code  Gb  ccgx_fw.o [1]
+ccgx_fw_GetHexVal       0x200245b1     0x2e  Code  Lc  fotamode.o [1]
+ccgx_fw_delay           0x2001dc85     0x16  Code  Lc  ccgx_fw.o [1]
+ccgx_fw_fgets           0x2001f043     0x34  Code  Gb  ccgx_fw_io.o [1]
+ccgx_fw_i2c_read        0x2001efc9      0xe  Code  Gb  ccgx_fw_io.o [1]
+ccgx_fw_i2c_write       0x2001efd7      0xc  Code  Gb  ccgx_fw_io.o [1]
+ccgx_fw_misc_cmds       0x2001b631     0xc4  Code  Lc  shellTask.o [1]
+ccgx_fws_offset         0x20025784      0x8  Data  Lc  ccgx_fw.o [1]
+ccgx_fws_size           0x2002578c      0x8  Data  Lc  ccgx_fw.o [1]
+ccgx_get_fw_version     0x2001dd87     0x50  Code  Gb  ccgx_fw.o [1]
+ccgx_get_image_header   0x0800920f     0x3a  Code  Gb  bl_header.o [1]
+ccgx_read_flash         0x2001f03b      0x8  Code  Gb  ccgx_fw_io.o [1]
+ccgx_set_fw_info        0x2001dc65     0x1e  Code  Gb  ccgx_fw.o [1]
+ccgx_upgrade_fw_bl      0x2001e229    0x2ec  Code  Gb  ccgx_fw.o [1]
+check_boot_reason       0x20018d17     0x2e  Code  Gb  initTask.o [1]
+check_gamma_settings    0x200124bd     0x26  Code  Lc  tc358870xbg_driver.o [1]
+check_input_video_timing
+                        0x20012985    0x18c  Code  Gb  tc358870xbg_driver.o [1]
+cmd_bootmode            0x2001b545     0xe8  Code  Gb  shellTask.o [1]
+cmd_help                0x2001b71d     0x30  Code  Gb  shellTask.o [1]
+cmd_mag                 0x2001aca3     0xe6  Code  Lc  shellTask.o [1]
+cmd_misc_data           0x2001a1c1    0x23e  Code  Gb  shellTask.o [1]
+colorbar_phase1_tbl     0x20025674      0x4  Data  Lc  tc358870xbg_driver.o [1]
+colorbar_phase1_tbl_fps58
+                        0x20012d3c    0x468  Data  Lc  tc358870xbg_driver.o [1]
+colorbar_phase1_tbl_size
+                        0x20025678      0x4  Data  Gb  tc358870xbg_driver.o [1]
+colorbar_phase2_tbl     0x2002567c      0x4  Data  Lc  tc358870xbg_driver.o [1]
+colorbar_phase2_tbl_fps58
+                        0x200131a4     0xb4  Data  Lc  tc358870xbg_driver.o [1]
+colorbar_phase2_tbl_size
+                        0x20025680      0x4  Data  Gb  tc358870xbg_driver.o [1]
+commandTable            0x2001be10     0x78  Data  Gb  shellTask.o [1]
+context                 0x20025660      0xc  Data  Lc  tc358870xbg_driver.o [1]
+curTaskID               0x20027a01      0x1  Data  Lc  task.o [1]
+cursor_offset           0x20002010      0x4  Data  Lc  hlog.o [1]
+dbg_uart                0x200278d0     0x40  Data  Gb  usart_drv.o [1]
+dbg_uart_init           0x20020521     0x5c  Code  Gb  usart_drv.o [1]
+dbg_uart_irq_num        0x200278cc      0x1  Data  Gb  usart_drv.o [1]
+dbg_uart_rx_handler     0x2002057d     0x20  Code  Gb  usart_drv.o [1]
+dfu_move_cb             0x200242e7     0x3a  Code  Gb  usbd_dfu_bl.o [1]
+digits                  0x2001f9dc     0x28  Data  Lc  xstoul.o [3]
+dimming_speed           0x2002596c      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+dimming_speed_setting   0x200250a4      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+disp_d2h_getid          0x20014495     0x12  Code  Gb  tc358870xbg_driver.o [1]
+disp_d2h_getid_anx7737  0x20014f73     0x56  Code  Gb  anx7737_driver.o [1]
+disp_d2h_getid_ps176    0x200150ef     0x12  Code  Gb  ps176_driver.o [1]
+disp_h2d_getid          0x200144a7     0x26  Code  Gb  tc358870xbg_driver.o [1]
+disp_power_off          0x200145af     0x54  Code  Gb  tc358870xbg_driver.o [1]
+disp_power_off_last_tick
+                        0x20025670      0x4  Data  Lc  tc358870xbg_driver.o [1]
+disp_power_on           0x20014541     0x5a  Code  Gb  tc358870xbg_driver.o [1]
+disp_startx             0x200144cd     0x28  Code  Gb  tc358870xbg_driver.o [1]
+disp_test_cmd           0x2001a989    0x112  Code  Gb  shellTask.o [1]
+disp_test_colorbar      0x200144f5     0x4c  Code  Gb  tc358870xbg_driver.o [1]
+disp_test_help          0x2001a82b     0x4e  Code  Gb  shellTask.o [1]
+display_drv_init        0x2002066d      0xa  Code  Gb  display_drv.o [1]
+div                     0x20018bd9      0xe  Code  Gb  div.o [3]
+dp2h_gpio_config_ps176  0x200150a1     0x44  Code  Gb  ps176_driver.o [1]
+dp2h_power_en           0x20014661     0x10  Code  Lc  tc358870xbg_driver.o [1]
+dp2h_power_en_anx7737   0x20014f65      0xe  Code  Gb  anx7737_driver.o [1]
+dp2h_power_en_ps176     0x2001504d     0x4e  Code  Gb  ps176_driver.o [1]
+dsi_dcs_read_reg_v2     0x200127f3    0x170  Code  Lc  tc358870xbg_driver.o [1]
+dsi_fns                 0x20025694      0x8  Data  Lc  tc358870xbg_driver.o [1]
+dsi_set_cmdq            0x2001259d    0x1ac  Code  Lc  tc358870xbg_driver.o [1]
+evm_path_switch_control
+                        0x2001f2b9     0x34  Code  Lc  audio_alc4040_driver.o [1]
+exit                    0x20025969      0x4  Code  Gb  exit.o [3]
+filter_useless_string   0x2001b835     0x72  Code  Lc  shellTask.o [1]
+flash_init              0x2001bf61      0xe  Code  Gb  flash_drv.o [1]
+flash_row_size          0x2002577c      0x2  Data  Gb  ccgx_fw.o [1]
+fota_move_image         0x200245df    0x1a8  Code  Gb  fotamode.o [1]
+fputc                   0x200255a1     0x36  Code  Gb  myprintf.o [1]
+free                    0x20018255     0x7a  Code  Gb  xxmemxfree.o [3]
+g_FOTAMoveFlag          0x20027a38      0x4  Data  Gb  dfuTask.o [1]
+g_alc4040_data          0x20027a1c      0x8  Data  Lc  audio_alc4040_driver.o [1]
+g_alc5665_data          0x20027884     0x48  Data  Lc  audio_alc5665_driver.o [1]
+g_audio_srv_data        0x20027a48      0x4  Data  Lc  htc_audio_path_service.o [1]
+g_ccg4_header           0x200276ec     0x80  Data  Gb  bl_header.o [1]
+g_disp_fps              0x2002566c      0x4  Data  Lc  tc358870xbg_driver.o [1]
+g_mfg_tag_names         0x200254c4     0x4c  Data  Gb  shellTask.o [1]
+gamma_compensation_setting
+                        0x20025534     0x24  Data  Lc  ams361ep01_dsi_vdo.o [1]
+gamma_setting           0x20025510     0x24  Data  Lc  ams361ep01_dsi_vdo.o [1]
+getColorID              0x20019423     0x24  Code  Gb  misc_data.o [1]
+getCustomID             0x20019323     0x26  Code  Gb  misc_data.o [1]
+getFirmwareMainVersion  0x20019591     0x24  Code  Gb  misc_data.o [1]
+getMBSerialNumber       0x200193bd     0x24  Code  Gb  misc_data.o [1]
+getProjectID            0x20019489     0x22  Code  Gb  misc_data.o [1]
+getSerialNumber         0x20019507     0x24  Code  Gb  misc_data.o [1]
+get_bootmode            0x200195b5     0x1e  Code  Gb  misc_data.o [1]
+get_image_header        0x080091f5     0x1a  Code  Gb  bl_header.o [1]
+get_pcbid               0x2001957b     0x10  Code  Gb  misc_data.o [1]
+get_skubid              0x2001939d     0x10  Code  Gb  misc_data.o [1]
+get_task_state          0x200199d5     0x24  Code  Wk  shellTask.o [1]
+global_para             0x200250b4      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+gpio_init               0x20017d31     0x98  Code  Gb  gpio.o [1]
+gsensor_mfg_cmds        0x2001b32d    0x1e8  Code  Gb  shellTask.o [1]
+h2d_power_en            0x20014629     0x38  Code  Lc  tc358870xbg_driver.o [1]
+h2d_reset_pin           0x20014609     0x20  Code  Lc  tc358870xbg_driver.o [1]
+hUsbDeviceFS            0x20026fc8    0x224  Data  Gb  usb_device_bl.o [1]
+handle_ccg4             0x20025780      0x4  Data  Lc  ccgx_fw.o [1]
+hdmi2dsi_driver_init    0x20014729     0xd8  Code  Gb  tc358870xbg_driver.o [1]
+hi2c1                   0x2002776c     0x54  Data  Gb  i2c_drv.o [1]
+hi2c2                   0x200277e0     0x54  Data  Gb  i2c_drv.o [1]
+hlog_erase_flashlog     0x2001921b      0xe  Code  Gb  hlog.o [1]
+hlog_save_logbuf        0x20019229     0x5a  Code  Gb  hlog.o [1]
+hpcd_USB_OTG_FS         0x20026c00    0x3c8  Data  Gb  usbd_conf_bl.o [1]
+hspi2                   0x20025468     0x58  Data  Gb  BMI160_ACC_GYRO_Driver_HL.o [1]
+i2c_mfg_cmd             0x20019b67    0x1c8  Code  Gb  shellTask.o [1]
+init_gamma_setting      0x200159bf     0x30  Code  Lc  ams361ep01_dsi_vdo.o [1]
+ioexp_drv_init          0x20017915     0x64  Code  Gb  gpio_exp.o [1]
+ioexp_get_reg_addr      0x20017849     0x54  Code  Lc  gpio_exp.o [1]
+ioexp_gpio_set_value    0x2001789d     0x78  Code  Gb  gpio_exp.o [1]
+isUSBDataIn             0x20018d45     0x2e  Code  Gb  initTask.o [1]
+is_buffdata_same        0x200191c5     0x24  Code  Gb  hlog.o [1]
+is_h2d_init             0x20014719     0x10  Code  Gb  tc358870xbg_driver.o [1]
+is_ncp6924_init         0x20025800      0x4  Data  Lc  ncp6924.o [1]
+isaspace                0x2001b74d     0x1a  Code  Gb  shellTask.o [1]
+isspace                 0x2002003d     0x14  Code  Gb  isxxx.o [3]
+jump_and_execute        0x20018be9     0x38  Code  Lc  initTask.o [1]
+lcd_and_h2d_reset       0x20014671     0x5a  Code  Lc  tc358870xbg_driver.o [1]
+lcm_backlight_level_setting
+                        0x20015b64     0x10  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_display_off_sequence_setting
+                        0x20015b74     0x28  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_display_on          0x2001596d     0x10  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_display_on_setting  0x20015b34     0x10  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_dsi_funcs           0x20025834      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_get_id              0x20015985     0x3a  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_get_params          0x200158a1     0x48  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_gpio_configure      0x200157d7     0x4e  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_init                0x200158e9      0x2  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_initialization_setting
+                        0x20015a7c     0xb8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_initialize          0x20015957     0x16  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_power_off           0x20015857     0x32  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_power_on            0x2001582d     0x2a  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_resume              0x20015901     0x3e  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_set_backlight       0x2001593f     0x18  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_set_dsi_funcs       0x20015889     0x18  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_set_power_en        0x20015791     0x46  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_set_reset_pin       0x20015741     0x44  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_sleep_in_sequence_setting
+                        0x20015b44     0x20  Data  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_suspend             0x200158eb     0x16  Code  Lc  ams361ep01_dsi_vdo.o [1]
+lcm_wait_50ms_setting   0x20015b9c      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+led_mfg_cmd             0x20019a21     0xce  Code  Gb  shellTask.o [1]
+level2_key_lock         0x2002509c      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+level2_key_unlock       0x20025060      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+level3_key_lock         0x200250c4      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+level3_key_unlock       0x200250ac      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+loadMiscData            0x200192a5     0x28  Code  Gb  misc_data.o [1]
+localeconv              0x20018ba7     0x16  Code  Gb  localeconv.o [3]
+log_buf                 0x20002018  0x10000  Data  Lc  hlog.o [1]
+logbuf_wrap_around      0x200191e9     0x32  Code  Lc  hlog.o [1]
+luminance               0x20025830      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+luminance_setting       0x200250a8      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+main                    0x2002050d     0x12  Code  Gb  main.o [1]
+malloc                  0x20018111     0xac  Code  Gb  xxmemxmalloc.o [3]
+max17050_batt_online    0x20020d23     0x1e  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_cfg            0x200251b4     0x94  Data  Lc  max17050_fuel_gauge.o [1]
+max17050_cfg_init       0x20020f79    0x192  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_current        0x20020d41     0x30  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_deinit         0x200211ab     0x1a  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_dev            0x20027914     0x44  Data  Lc  max17050_fuel_gauge.o [1]
+max17050_full_capacity  0x20020ded     0x18  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_get_current    0x20020e13     0x38  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_get_full_capacity
+                        0x20020eb1     0x14  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_get_soc        0x20020e79     0x14  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_get_temperature
+                        0x20020e8d     0x1c  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_get_voltage    0x20020e5b     0x1e  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_init           0x2002112d     0x7e  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_por_load_model
+                        0x20020ecb     0xae  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_read_reg       0x20020c49     0x38  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_soc            0x20020d97     0x2a  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_temperature    0x20020dc1     0x2c  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_voltage        0x20020d77     0x20  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_write_reg      0x20020c81     0x34  Code  Lc  max17050_fuel_gauge.o [1]
+max17050_write_verify_reg
+                        0x20020ccb     0x58  Code  Lc  max17050_fuel_gauge.o [1]
+memchr                  0x200180ad           Code  Gb  memchr.o [5]
+mfg_example             0x2001a74d     0x8a  Code  Gb  shellTask.o [1]
+misc_is_ascii_char      0x20019315      0xe  Code  Lc  misc_data.o [1]
+mux_read_version        0x2001ac05     0x52  Code  Gb  shellTask.o [1]
+my_strtoul              0x20019a09     0x18  Code  Gb  shellTask.o [1]
+ncp6924_reg_read        0x20024971     0x3a  Code  Gb  ncp6924.o [1]
+ncp6924_reg_write       0x200249ab     0x36  Code  Gb  ncp6924.o [1]
+ndigs                   0x2001fa04     0x28  Data  Lc  xstoul.o [3]
+obuf                    0x20027834     0x50  Data  Lc  xfiles.o [3]
+pFlash                  0x200279c4     0x20  Data  Gb  stm32f4xx_hal_flash.o [1]
+p_bmi160                0x20027a34      0x4  Data  Gb  BMI160_ACC_GYRO_Driver.o [1]
+pcb_id                  0x20027a4c      0x4  Data  Gb  init.o [1]
+pentile_ctrl            0x2002507c      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+pmic_vreg               0x200257f4      0xc  Data  Gb  ncp6924.o [1]
+power_ctrl              0x20025084      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+power_mfg_cmd           0x2001a0dd     0xc0  Code  Gb  shellTask.o [1]
+prev_ch                 0x20027a65      0x1  Data  Lc  myprintf.o [1]
+printf                  0x20014e99     0x24  Code  Gb  printf.o [3]
+putchar                 0x200257ad      0xc  Code  Gb  putchar.o [3]
+readDCSData             0x20012493     0x2a  Code  Lc  tc358870xbg_driver.o [1]
+readFromDSI             0x20012351     0x88  Code  Lc  tc358870xbg_driver.o [1]
+read_Gamma              0x200250d0      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+resolution_setting      0x20025068      0xc  Data  Lc  ams361ep01_dsi_vdo.o [1]
+rewrite_gamma_settings  0x200124e3     0xba  Code  Lc  tc358870xbg_driver.o [1]
+s_bmi160                0x200279e4     0x1c  Data  Gb  BMI160_ACC_GYRO_Driver.o [1]
+saveMiscData            0x200192d7     0x3e  Code  Gb  misc_data.o [1]
+sch_scheduler           0x2001beb7     0x1a  Code  Gb  task.o [1]
+sch_scheduler_init      0x2001be89     0x2e  Code  Gb  task.o [1]
+searchDeviceName        0x20014967     0xb8  Code  Gb  i2c_drv.o [1]
+setColorID              0x2001944b     0x2a  Code  Gb  misc_data.o [1]
+setCustomID             0x20019349     0x36  Code  Gb  misc_data.o [1]
+setMBSerialNumber       0x200193e1     0x2a  Code  Gb  misc_data.o [1]
+setProjectID            0x200194ab     0x34  Code  Gb  misc_data.o [1]
+setSerialNumber         0x2001952b     0x2a  Code  Gb  misc_data.o [1]
+set_bootmode            0x200195d3     0x20  Code  Gb  misc_data.o [1]
+set_max_ret_size        0x200250cc      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+set_pcbid               0x20019555     0x1e  Code  Gb  misc_data.o [1]
+set_skuid               0x2001937f     0x1e  Code  Gb  misc_data.o [1]
+sleep_in                0x200250f8      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+snprintf                0x20015c31     0x44  Code  Gb  snprintf.o [3]
+source_ctrl             0x20025074      0x8  Data  Lc  ams361ep01_dsi_vdo.o [1]
+spi_routine             0x2001c5d1     0x24  Code  Gb  BMI160_ACC_GYRO_Driver.o [1]
+start_video_tx          0x20012b11     0x54  Code  Lc  tc358870xbg_driver.o [1]
+startup_phase1_tbl      0x20025684      0x4  Data  Lc  tc358870xbg_driver.o [1]
+startup_phase1_tbl_fps58
+                        0x20013258    0x45c  Data  Lc  tc358870xbg_driver.o [1]
+startup_phase1_tbl_size
+                        0x20025688      0x4  Data  Gb  tc358870xbg_driver.o [1]
+startup_phase2_tbl      0x2002568c      0x4  Data  Lc  tc358870xbg_driver.o [1]
+startup_phase2_tbl_fps58
+                        0x200136b4    0xde0  Data  Lc  tc358870xbg_driver.o [1]
+startup_phase2_tbl_size
+                        0x20025690      0x4  Data  Gb  tc358870xbg_driver.o [1]
+strcasecmp              0x2001c485     0x46  Code  Gb  strcasecmp.o [3]
+strchr                  0x2001805d           Code  Gb  strchr.o [5]
+strlen                  0x20018075           Code  Gb  strlen.o [5]
+strncmp                 0x2001919b     0x2a  Code  Gb  strncmp.o [3]
+strtoul                 0x2001c481      0x4  Code  Gb  strtoul.o [3]
+sync_event_handle       0x20012b65    0x12c  Code  Lc  tc358870xbg_driver.o [1]
+sysInit                 0x2001fb47     0x4c  Code  Gb  init.o [1]
+sysTickfor100ms         0x20027a62      0x1  Data  Gb  GLOBAL.o [1]
+sysTickfor10ms          0x20027a61      0x1  Data  Gb  GLOBAL.o [1]
+sysTickfor1min          0x20027a44      0x4  Data  Gb  GLOBAL.o [1]
+t_infoI2C               0x200277c0     0x18  Data  Lc  i2c_drv.o [1]
+tc358870_i2c_read16     0x20012117     0x44  Code  Lc  tc358870xbg_driver.o [1]
+tc358870_i2c_read32     0x200121b9     0x44  Code  Lc  tc358870xbg_driver.o [1]
+tc358870_i2c_read8      0x20012055     0x2c  Code  Lc  tc358870xbg_driver.o [1]
+tc358870_i2c_write16    0x200120c5     0x2e  Code  Lc  tc358870xbg_driver.o [1]
+tc358870_i2c_write32    0x20012171     0x30  Code  Lc  tc358870xbg_driver.o [1]
+tc358870_i2c_write8     0x20012019     0x26  Code  Lc  tc358870xbg_driver.o [1]
+tickcount               0x20027a40      0x4  Data  Gb  GLOBAL.o [1]
+tolower                 0x2001fa2d     0x14  Code  Gb  tolower.o [3]
+undefTask               0x2001bf19      0x2  Code  Gb  task.o [1]
+update_gamma_setting    0x200159ef     0x16  Code  Lc  ams361ep01_dsi_vdo.o [1]
+usbd_dfu_classdata      0x200263d8    0x418  Data  Gb  usbd_dfu_bl.o [1]
+uwTick                  0x20027a58      0x4  Data  Gb  stm32f4xx_hal.o [1]
+version_string          0x08008fc0     0x10  Data  Gb  bl_header.o [1]
+wait_150ms              0x200250c0      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+wait_30ms               0x20025100      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+wait_40ms               0x200250fc      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+wait_50ms               0x200250f4      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+wait_5ms                0x200250ec      0x4  Data  Lc  ams361ep01_dsi_vdo.o [1]
+wait_dcs_queue          0x20012227     0x76  Code  Lc  tc358870xbg_driver.o [1]
+whiteSpace              0x2001be08      0x8  Data  Gb  shellTask.o [1]
+write_gamma_setting     0x20015ba4     0x20  Data  Lc  ams361ep01_dsi_vdo.o [1]
+write_h2d_reg_item      0x200146cb     0x4e  Code  Lc  tc358870xbg_driver.o [1]
+
+
+[1] = G:\code\STM32\Kalman\link_hmd\BL1\EWARM\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tlv.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+     874 bytes of readonly  code memory
+  77 178 bytes of readwrite code memory
+  55 143 bytes of readonly  data memory (+ 64     absolute)
+  21 658 bytes of readwrite data memory (+ 65 556 absolute)
+
+Errors: none
+Warnings: none

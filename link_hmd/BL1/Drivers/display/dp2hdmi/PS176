@@ -1,0 +1,5 @@
+power:
+	V_DP_EN(alias name: V_DP_PS_EN), by PA4 control
+
+interface:
+	SR_I2C, i2c don't need access, please ref "LINK - I2C Address table"

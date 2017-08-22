@@ -1,0 +1,115 @@
+/**
+  ******************************************************************************
+  * @file           : USB_DEVICE
+  * @version        : v1.0_Cube
+  * @brief          : Header for usb_device file.
+  ******************************************************************************
+  *
+  * Copyright (c) 2016 STMicroelectronics International N.V. 
+  * All rights reserved.
+  *
+  * Redistribution and use in source and binary forms, with or without 
+  * modification, are permitted, provided that the following conditions are met:
+  *
+  * 1. Redistribution of source code must retain the above copyright notice, 
+  *    this list of conditions and the following disclaimer.
+  * 2. Redistributions in binary form must reproduce the above copyright notice,
+  *    this list of conditions and the following disclaimer in the documentation
+  *    and/or other materials provided with the distribution.
+  * 3. Neither the name of STMicroelectronics nor the names of other 
+  *    contributors to this software may be used to endorse or promote products 
+  *    derived from this software without specific written permission.
+  * 4. This software, including modifications and/or derivative works of this 
+  *    software, must execute solely and exclusively on microcontroller or
+  *    microprocessor devices manufactured by or for STMicroelectronics.
+  * 5. Redistribution and use of this software other than as permitted under 
+  *    this license is void and will automatically terminate your rights under 
+  *    this license. 
+  *
+  * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+  * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+  * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+  * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+  * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+  * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+  * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+*/
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __usb_device_H
+#define __usb_device_H
+#ifdef __cplusplus
+ extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32f4xx.h"
+#include "stm32f4xx_hal.h"
+#include "usbd_def.h"
+#include "hlog_api.h"
+
+enum usbd_drv_state {
+	USBD_DRV_UNINITIALIZED = 0,
+	USBD_DRV_STOPING,
+	USBD_DRV_STOP,
+	USBD_DRV_STARTING,
+	USBD_DRV_START,
+};
+
+#define USBD_DEV_HLOG_ENABLE
+
+#ifdef USBD_DEV_HLOG_ENABLE
+#define usbd_dev_emerg(fmt, ...) \
+	hlog_printf(HLOG_LVL_EMERG, HLOG_TAG_USB, fmt, ##__VA_ARGS__)
+#define usbd_dev_err(fmt, ...) \
+	hlog_printf(HLOG_LVL_ERR, HLOG_TAG_USB, fmt, ##__VA_ARGS__)
+#define usbd_dev_warning(fmt, ...) \
+	hlog_printf(HLOG_LVL_WARNING, HLOG_TAG_USB, fmt, ##__VA_ARGS__)
+#define usbd_dev_info(fmt, ...) \
+	hlog_printf(HLOG_LVL_INFO, HLOG_TAG_USB, fmt, ##__VA_ARGS__)
+#define usbd_dev_debug(fmt, ...) \
+	hlog_printf(HLOG_LVL_DEBUG, HLOG_TAG_USB, fmt, ##__VA_ARGS__)
+#else /* USBD_DEV_HLOG_ENABLE */
+#define usbd_dev_emerg(fmt, ...) \
+	printf("[USBD][EMR] :" fmt, ##__VA_ARGS__)
+#define usbd_dev_err(fmt, ...) \
+	printf("[USBD][ERR] :" fmt, ##__VA_ARGS__)
+#define usbd_dev_warning(fmt, ...) \
+	printf("[USBD][WARN]:" fmt, ##__VA_ARGS__)
+#define usbd_dev_info(fmt, ...) \
+	printf("[USBD][INFO]:" fmt, ##__VA_ARGS__)
+#define usbd_dev_debug(fmt, ...) \
+	printf("[USBD][DBG] :" fmt, ##__VA_ARGS__)
+#endif /* USBD_DEV_HLOG_ENABLE */
+
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
+/* USB_Device init function */	
+void MX_USB_DEVICE_Init(void);
+void MX_USB_DEVICE_START(void);
+void MX_USB_DEVICE_STOP(void);
+int set_usb_device_control(enum usbd_drv_state);
+
+
+
+#ifdef __cplusplus
+}
+#endif
+#endif /*__usb_device_H */
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
