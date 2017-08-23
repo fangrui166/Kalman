@@ -588,6 +588,7 @@ int fusionHandleMag(struct Fusion *fusion, int sensorType,
 
     if (magFieldSq > MAX_VALID_MAGNETIC_FIELD_SQ
             || magFieldSq < MIN_VALID_MAGNETIC_FIELD_SQ) {
+            printf("%s magFieldSq:%f\r\n",__func__,magFieldSq);
         return -EINVAL;
     }
 
@@ -666,6 +667,8 @@ int on_sensor_changed(uint8_t type, float *vec, long long dT)
     struct sensor_data data;
 
     data.type = type;
+
+    dT = 1000000000ULL / 400;
     data.dT = floatFromUint64(dT) * 1e-9f;
     data.vec.x = vec[0];
     data.vec.y = vec[1];
@@ -693,14 +696,14 @@ static void fusion_thread_func(void const * argument)
     struct sensor_data data;
     struct Fusion *fusion = (struct Fusion *)argument;
 
-    initFusion(fusion, FUSION_REINITIALIZE|FUSION_USE_GYRO );
+    initFusion(fusion, FUSION_REINITIALIZE|FUSION_USE_GYRO|FUSION_USE_MAG );
 
     for(;;){
         if(fusion_MsgQueueHandle == NULL) continue;
         xQueueReceive( fusion_MsgQueueHandle, &data, portMAX_DELAY );
         doSensorChang(fusion, data.type, (struct Vec3 *)&data.vec, data.dT);
-        printf("%s [quat] x:%f, y:%f, z:%f, w:%f\r\n", __func__,
-            fusion->x0.x, fusion->x0.y,fusion->x0.z, fusion->x0.w);
+        //printf("%s [quat] x:%f, y:%f, z:%f, w:%f\r\n", __func__,
+            //fusion->x0.x, fusion->x0.y,fusion->x0.z, fusion->x0.w);
     }
 }
 

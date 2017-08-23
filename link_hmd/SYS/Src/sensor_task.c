@@ -423,6 +423,7 @@ void StartSensorTask(void const* argument)
 #ifdef CARDBOARD_FUSION
     float ax, ay, az;
     float gx, gy, gz;
+    float mx, my, mz;
     us32 nowSensorTime = 0;
     long long finalTimeStamp = 0;
 #ifdef SENSOR_TASK_DUMP_SAMPLE_RATE_LOG
@@ -491,10 +492,10 @@ void StartSensorTask(void const* argument)
             //hlog_printf(HLOG_LVL_INFO, HLOG_TAG_SENSOR, "MAG INT\n");
             sensorGetData(MAG, &magnetometer);
 
-#ifdef DEBUG
-            mag_info("MAG x = %d y = %d z = %d\n", magnetometer.AXIS_X, magnetometer.AXIS_Y, magnetometer.AXIS_Z);
-#endif /* DEBUG */
         }
+        #if 0
+            mag_info("MAG x = %d y = %d z = %d\n", magnetometer.AXIS_X, magnetometer.AXIS_Y, magnetometer.AXIS_Z);
+        #endif /* DEBUG */
 
 #ifdef CARDBOARD_FUSION
 
@@ -522,8 +523,8 @@ void StartSensorTask(void const* argument)
             gz = -(((float)angular_velocity.AXIS_Z)) * 3.14 / 180.0;
         }
 
-#if 1
-        hlog_printf(HLOG_LVL_INFO, HLOG_TAG_FUSION, "TimeStamp: %lld, ACC: %f,%f,%f, Gyro: %f,%f,%f\n", finalTimeStamp, ax, ay, az, gx, gy, gz);
+#if 0
+        hlog_printf(HLOG_LVL_INFO, HLOG_TAG_FUSION, "TimeStamp: %lld, ACC: %f,%f,%f, Gyro: %f,%f,%f\r\n", finalTimeStamp, ax, ay, az, gx, gy, gz);
 #endif /* DEBUG */
         tracking_on = true;
 
@@ -545,6 +546,20 @@ void StartSensorTask(void const* argument)
             onSensorChanged(&gyroEvent, headTracker);
             on_sensor_changed(gyroEvent.sensorType, gyroEvent.values,
                             gyroEvent.timestamp);
+            mx = (float)(magnetometer.AXIS_X/1000.0);
+            my = (float)(magnetometer.AXIS_Y/1000.0);
+            mz = (float)(magnetometer.AXIS_Z/1000.0);
+            #if 1
+                mag_info("MAG x = %f y = %f z = %f\n", mx, my, mz);
+            #endif /* DEBUG */
+
+            MagEvent.sensorType = 2;
+            MagEvent.values[0] = mx;
+            MagEvent.values[1] = my;
+            MagEvent.values[2] = mz;
+            MagEvent.timestamp = finalTimeStamp;
+            on_sensor_changed(MagEvent.sensorType, MagEvent.values,
+                            MagEvent.timestamp);
         }
 
 #ifdef PLUGIN

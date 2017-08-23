@@ -227,12 +227,12 @@ void phone_vbus_det_irq(void)
 #endif
 static void WaitUSBPulgInCallback(void const *argument)
 {
-    pwrmgr_system_send_message(PM_SYS_CMD_NO_USB_TIMEOUT, 0);
+    //pwrmgr_system_send_message(PM_SYS_CMD_NO_USB_TIMEOUT, 0);
 
 }
 static void WaitVideoOutCallback(void const *argument)
 {
-    pwrmgr_system_send_message(PM_SYS_CMD_WAIT_VIDEO_TIMEOUT, 0);
+    //pwrmgr_system_send_message(PM_SYS_CMD_WAIT_VIDEO_TIMEOUT, 0);
 
 }
 static int pwrmgr_system_notify_callback(uint32_t _notify_flag,
